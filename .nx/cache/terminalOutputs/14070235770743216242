@@ -1,0 +1,41 @@
+
+[7m[1m[36m NX [39m[22m[27m [1mStarting module federation dev-server for [1mconsumer[22m[1m with 2 remotes[22m
+
+
+[7m[1m[36m NX [39m[22m[27m [1mBuilding 2 static remotes...[22m
+
+
+[7m[1m[36m NX [39m[22m[27m [1mBuilt 2 static remotes[22m
+
+
+[7m[1m[36m NX [39m[22m[27m [1mStarting static remotes proxies...[22m
+
+
+[7m[1m[36m NX [39m[22m[27m [1mStatic remotes proxies started successfully[22m
+
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::4201
+[90m    at Server.setupListenHandle [as _listen2] (node:net:1940:16)[39m
+[90m    at listenInCluster (node:net:1997:12)[39m
+[90m    at Server.listen (node:net:2102:7)[39m
+    at startRemoteProxies [90m(/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/[39mnode_modules/[4m.pnpm[24m/@nx+module-federation@22.0.2_@babel+traverse@7.29.0_@swc-node+register@1.9.2_@swc+core@_67e7598865400e75082cb5b7f3e29fd6/node_modules/[4m@nx/module-federation[24m/src/utils/start-remote-proxies.js:33:14[90m)[39m
+    at startRemoteIterators [90m(/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/[39mnode_modules/[4m.pnpm[24m/@nx+module-federation@22.0.2_@babel+traverse@7.29.0_@swc-node+register@1.9.2_@swc+core@_67e7598865400e75082cb5b7f3e29fd6/node_modules/[4m@nx/module-federation[24m/src/executors/utils/start-remote-iterators.js:41:42[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:103:5)[39m
+    at moduleFederationDevServer [90m(/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/[39mnode_modules/[4m.pnpm[24m/@nx+rspack@22.0.2_@babel+traverse@7.29.0_@module-federation+enhanced@0.21.6_@rspack+cor_f762a98b0b21cd5cc18e160e15420050/node_modules/[4m@nx/rspack[24m/src/executors/module-federation-dev-server/module-federation-dev-server.impl.js:42:60[90m)[39m
+    at getLastValueFromAsyncIterableIterator [90m(/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/[39mnode_modules/[4m.pnpm[24m/nx@22.0.2_@swc-node+register@1.9.2_@swc+core@1.5.29_@swc+helpers@0.5.19__@swc+types@0.1_bf3d52662c4034be003c5cd1c87bed40/node_modules/[4mnx[24m/src/utils/async-iterator.js:15:19[90m)[39m
+    at iteratorToProcessStatusCode [90m(/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/[39mnode_modules/[4m.pnpm[24m/nx@22.0.2_@swc-node+register@1.9.2_@swc+core@1.5.29_@swc+helpers@0.5.19__@swc+types@0.1_bf3d52662c4034be003c5cd1c87bed40/node_modules/[4mnx[24m/src/command-line/run/run.js:39:25[90m)[39m
+    at handleErrors [90m(/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/[39mnode_modules/[4m.pnpm[24m/nx@22.0.2_@swc-node+register@1.9.2_@swc+core@1.5.29_@swc+helpers@0.5.19__@swc+types@0.1_bf3d52662c4034be003c5cd1c87bed40/node_modules/[4mnx[24m/src/utils/handle-errors.js:8:24[90m)[39m
+Emitted 'error' event on Server instance at:
+[90m    at emitErrorNT (node:net:1976:8)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:89:21)[39m {
+  code: [32m'EADDRINUSE'[39m,
+  errno: [33m-98[39m,
+  syscall: [32m'listen'[39m,
+  address: [32m'::'[39m,
+  port: [33m4201[39m
+}
+
+Node.js v24.11.1

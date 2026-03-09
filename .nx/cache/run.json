@@ -1,0 +1,43 @@
+{
+  "run": {
+    "command": "nx run-many --target=build --projects=transfers,balances,consumer --parallel=1 --skip-nx-cache",
+    "startTime": "2026-03-09T21:12:23.320Z",
+    "endTime": "2026-03-09T21:12:36.893Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "transfers:build:production",
+      "target": "build",
+      "projectName": "transfers",
+      "hash": "9555327935598314907",
+      "startTime": "2026-03-09T21:12:23.336Z",
+      "endTime": "2026-03-09T21:12:28.010Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "balances:build:production",
+      "target": "build",
+      "projectName": "balances",
+      "hash": "423883560242622536",
+      "startTime": "2026-03-09T21:12:28.015Z",
+      "endTime": "2026-03-09T21:12:31.885Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "consumer:build:production",
+      "target": "build",
+      "projectName": "consumer",
+      "hash": "12765331936033856345",
+      "startTime": "2026-03-09T21:12:31.890Z",
+      "endTime": "2026-03-09T21:12:36.889Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

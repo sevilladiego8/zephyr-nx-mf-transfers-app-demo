@@ -1,0 +1,23 @@
+(node:297113) [DEP0128] DeprecationWarning: Invalid 'main' field in '/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/node_modules/zephyr-rspack-plugin/dist/package.json' of 'dist/index.js'. Please either fix that or report it to the module author
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[1m[106m[30m ZEPHYR [39m[49m[22m  Hi [96mds_dev[39m!
+[1m[106m[30m ZEPHYR [39m[49m[22m  [37mconsumer.zephyr-nx-mf-transfers-app-demo.sevilladiego8[39m[33m#993[39m
+[1m[106m[30m ZEPHYR [39m[49m[22m  
+[1m[106m[30m ZEPHYR [39m[49m[22m  Resolved remotes:
+[1m[106m[30m ZEPHYR [39m[49m[22m    transfers → https://ds-dev-991-transfers-zephyr-nx-mf-transfers-app-d-f6f9ae45c-ze.zephyrcloud.app/remoteEntry.js
+[1m[106m[30m ZEPHYR [39m[49m[22m    balances → https://ds-dev-992-balances-zephyr-nx-mf-transfers-app-de-f13edb157-ze.zephyrcloud.app/remoteEntry.js
+[36m[ Module Federation Manifest Plugin ][39m Manifest will use absolute path resolution via its host at runtime, reason: publicPath='auto'
+[1m[106m[30m ZEPHYR [39m[49m[22m  Uploaded [32mlocal[39m snapshot in [33m214[39mms
+[1m[106m[30m ZEPHYR [39m[49m[22m  [37m([97m11[37m/[37m11[37m assets uploaded in [97m1022[37mms, [97m402.22[37mkb)[39m
+[1m[106m[30m ZEPHYR [39m[49m[22m  Resolved zephyr dependencies: transfers, balances
+[1m[106m[30m ZEPHYR [39m[49m[22m  Deployed to [96mZephyr[39m's edge in [33m1146[39mms.
+[1m[106m[30m ZEPHYR [39m[49m[22m  
+[1m[106m[30m ZEPHYR [39m[49m[22m  [96mhttps://ds-dev-993-consumer-zephyr-nx-mf-transfers-app-de-9ab034c28-ze.zephyrcloud.app[39m
+
+chunk (runtime: main) [1m[32m16.89f287587fc12a62.js[39m[22m (id hint: vendors) 535 KiB [1m[32m[rendered][39m[22m
+chunk (runtime: main) 6 bytes (remote) 6 bytes (share-init)
+chunk (runtime: main) 6 bytes (remote) 6 bytes (share-init)
+chunk (runtime: main) [1m[32m711.076a5eeabc20c87d.js[39m[22m 1.16 KiB [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32m805.308614c39f5b7913.js[39m[22m 126 bytes (consume-shared) 58.4 KiB (javascript) [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32mmain.2cb29e17e12a6c4f.js[39m[22m (main) 84 bytes (consume-shared) 542 KiB (javascript) 12.6 KiB (runtime) 210 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+Rspack compiled [1m[32msuccessfully[39m[22m (22d643c814dce486)

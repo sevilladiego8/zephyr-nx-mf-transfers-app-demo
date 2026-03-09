@@ -1,0 +1,9 @@
+{
+  "name": "consumer",
+  "version": "0.0.1",
+  "private": true,
+  "zephyr:dependencies": {
+    "transfers": "zephyr:transfers@*",
+    "balances": "zephyr:balances@*"
+  }
+}
