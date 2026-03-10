@@ -16,6 +16,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@nx/consumer"]
+    "customConditions": ["@nx/consumer"],
+    "paths": {
+      // doesn't work, error: 'rootDir' is expected to contain all source files.
+      "@nx/shared-ui": ["./libs/shared-ui/src/index.ts"]
+    }
   }
 }

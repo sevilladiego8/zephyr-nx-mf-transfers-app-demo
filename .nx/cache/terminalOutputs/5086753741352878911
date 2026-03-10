@@ -1,0 +1,93 @@
+[4m[34msrc/app/app.tsx:3:10[39m[24m - [31m[1merror[22m[39m [90mTS2305[39m: Module '"@nx/shared-ui"' has no exported member 'Button'.
+
+[0m [90m 1 | [39m[36mimport[39m classes from [32m'./app.module.scss'[39m[33m;[39m[0m
+[0m [90m 2 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 3 | [39m[36mimport[39m { [33mButton[39m } from [32m'@nx/shared-ui'[39m[33m;[39m[0m
+[0m [90m   | [39m         [31m[1m^[22m[39m[0m
+[0m [90m 4 | [39m[0m
+[0m [90m 5 | [39m[36mexport[39m [36mfunction[39m [33mApp[39m() {[0m
+[0m [90m 6 | [39m  [36mreturn[39m ([0m
+
+[4m[34msrc/app/app.tsx:3:24[39m[24m - [31m[1merror[22m[39m [90mTS6307[39m: File '/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/libs/shared-ui/src/index.ts' is not listed within the file list of project ''. Projects must list all files or use an 'include' pattern.
+
+[0m [90m 1 | [39m[36mimport[39m classes from [32m'./app.module.scss'[39m[33m;[39m[0m
+[0m [90m 2 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 3 | [39m[36mimport[39m { [33mButton[39m } from [32m'@nx/shared-ui'[39m[33m;[39m[0m
+[0m [90m   | [39m                       [31m[1m^[22m[39m[0m
+[0m [90m 4 | [39m[0m
+[0m [90m 5 | [39m[36mexport[39m [36mfunction[39m [33mApp[39m() {[0m
+[0m [90m 6 | [39m  [36mreturn[39m ([0m
+
+[4m[34m../../libs/shared-ui/src/index.ts:3:15[39m[24m - [31m[1merror[22m[39m [90mTS6307[39m: File '/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/libs/shared-ui/src/lib/components/Button/Button.tsx' is not listed within the file list of project ''. Projects must list all files or use an 'include' pattern.
+
+[0m [90m 1 | [39m[90m// export * from './lib/shared-ui';[39m[0m
+[0m [90m 2 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 3 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Button/Button'[39m[33m;[39m[0m
+[0m [90m   | [39m              [31m[1m^[22m[39m[0m
+[0m [90m 4 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Inputs/Input/Input'[39m[33m;[39m[0m
+[0m [90m 5 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Inputs/TextArea/TextArea'[39m[33m;[39m[0m
+[0m [90m 6 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Modal/Modal'[39m[33m;[39m[0m
+
+[4m[34m../../libs/shared-ui/src/index.ts:4:15[39m[24m - [31m[1merror[22m[39m [90mTS6307[39m: File '/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/libs/shared-ui/src/lib/components/Inputs/Input/Input.tsx' is not listed within the file list of project ''. Projects must list all files or use an 'include' pattern.
+
+[0m [90m 2 | [39m[0m
+[0m [90m 3 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Button/Button'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Inputs/Input/Input'[39m[33m;[39m[0m
+[0m [90m   | [39m              [31m[1m^[22m[39m[0m
+[0m [90m 5 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Inputs/TextArea/TextArea'[39m[33m;[39m[0m
+[0m [90m 6 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Modal/Modal'[39m[33m;[39m[0m
+[0m [90m 7 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Table/Table'[39m[33m;[39m[0m
+
+[4m[34m../../libs/shared-ui/src/index.ts:5:15[39m[24m - [31m[1merror[22m[39m [90mTS6307[39m: File '/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/libs/shared-ui/src/lib/components/Inputs/TextArea/TextArea.tsx' is not listed within the file list of project ''. Projects must list all files or use an 'include' pattern.
+
+[0m [90m 3 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Button/Button'[39m[33m;[39m[0m
+[0m [90m 4 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Inputs/Input/Input'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Inputs/TextArea/TextArea'[39m[33m;[39m[0m
+[0m [90m   | [39m              [31m[1m^[22m[39m[0m
+[0m [90m 6 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Modal/Modal'[39m[33m;[39m[0m
+[0m [90m 7 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Table/Table'[39m[33m;[39m[0m
+[0m [90m 8 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/AnalyticsChart/AnalyticsChart'[39m[33m;[39m[0m
+
+[4m[34m../../libs/shared-ui/src/index.ts:6:15[39m[24m - [31m[1merror[22m[39m [90mTS6307[39m: File '/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/libs/shared-ui/src/lib/components/Modal/Modal.tsx' is not listed within the file list of project ''. Projects must list all files or use an 'include' pattern.
+
+[0m [90m 4 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Inputs/Input/Input'[39m[33m;[39m[0m
+[0m [90m 5 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Inputs/TextArea/TextArea'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Modal/Modal'[39m[33m;[39m[0m
+[0m [90m   | [39m              [31m[1m^[22m[39m[0m
+[0m [90m 7 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Table/Table'[39m[33m;[39m[0m
+[0m [90m 8 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/AnalyticsChart/AnalyticsChart'[39m[33m;[39m[0m
+[0m [90m 9 | [39m[0m
+
+[4m[34m../../libs/shared-ui/src/index.ts:7:15[39m[24m - [31m[1merror[22m[39m [90mTS6307[39m: File '/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/libs/shared-ui/src/lib/components/Table/Table.tsx' is not listed within the file list of project ''. Projects must list all files or use an 'include' pattern.
+
+[0m [90m 5 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Inputs/TextArea/TextArea'[39m[33m;[39m[0m
+[0m [90m 6 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Modal/Modal'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 7 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Table/Table'[39m[33m;[39m[0m
+[0m [90m   | [39m              [31m[1m^[22m[39m[0m
+[0m [90m 8 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/AnalyticsChart/AnalyticsChart'[39m[33m;[39m[0m
+[0m [90m 9 | [39m[0m
+
+[4m[34m../../libs/shared-ui/src/index.ts:8:15[39m[24m - [31m[1merror[22m[39m [90mTS6307[39m: File '/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/libs/shared-ui/src/lib/components/AnalyticsChart/AnalyticsChart.tsx' is not listed within the file list of project ''. Projects must list all files or use an 'include' pattern.
+
+[0m [90m 6 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Modal/Modal'[39m[33m;[39m[0m
+[0m [90m 7 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/Table/Table'[39m[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 8 | [39m[36mexport[39m [33m*[39m from [32m'./lib/components/AnalyticsChart/AnalyticsChart'[39m[33m;[39m[0m
+[0m [90m   | [39m              [31m[1m^[22m[39m[0m
+[0m [90m 9 | [39m[0m
+
+[4m[34m../../libs/shared-ui/src/lib/components/AnalyticsChart/AnalyticsChart.tsx:3:1[39m[24m - [31m[1merror[22m[39m [90mTS6133[39m: 'React' is declared but its value is never read.
+
+[0m [90m 1 | [39m[36mimport[39m [32m'./AnalyticsChart.scss'[39m[0m
+[0m [90m 2 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 3 | [39m[36mimport[39m [33mReact[39m from [32m"react"[39m[33m;[39m[0m
+[0m [90m   | [39m[31m[1m^[22m[39m[0m
+[0m [90m 4 | [39m[0m
+[0m [90m 5 | [39m[0m
+[0m [90m 6 | [39m[36mexport[39m type [33mAnalyticsDataPoint[39m [33m=[39m {[0m
+
+Found 9 errors.
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mFound type errors. See above.[39m
+
+Pass --verbose to see the stacktrace.
+

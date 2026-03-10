@@ -8,6 +8,9 @@
     },
     {
       "path": "./libs/shared-styles"
+    },
+    {
+      "path": "./libs/shared-ui"
     }
   ]
 }

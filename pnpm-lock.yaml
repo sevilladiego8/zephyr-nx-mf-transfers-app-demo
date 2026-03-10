@@ -183,6 +183,8 @@ importers:
 
   libs/shared-styles: {}
 
+  libs/shared-ui: {}
+
 packages:
 
   '@alloc/quick-lru@5.2.0':

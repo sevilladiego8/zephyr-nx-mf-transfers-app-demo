@@ -1,3 +1,13 @@
+// https://nx.dev/docs/technologies/module-federation/concepts/micro-frontend-architecture#shared-libraries
+const coreLibraries = new Set([
+  'react',
+  'react-dom',
+  'react-router-dom',
+  // A workspace library for a publish/subscribe
+  // system of communication.
+  '@nx/shared-ui',
+]);
+
 const config = {
   name: 'consumer',
   /**
@@ -13,6 +23,14 @@ const config = {
    *
    */
   remotes: ['transfers', 'balances'],
+  shared: (libraryName: any, defaultConfig: any) => {
+    if (coreLibraries.has(libraryName)) {
+      return defaultConfig;
+    }
+
+    // Returning false means the library is not shared.
+    return false;
+  },
 };
 
 export default config;

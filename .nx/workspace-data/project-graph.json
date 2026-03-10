@@ -139,6 +139,145 @@
         "implicitDependencies": []
       }
     },
+    "@nx/shared-ui": {
+      "name": "@nx/shared-ui",
+      "type": "lib",
+      "data": {
+        "root": "libs/shared-ui",
+        "targets": {
+          "typecheck": {
+            "dependsOn": [
+              "^typecheck"
+            ],
+            "options": {
+              "cwd": "libs/shared-ui",
+              "command": "tsc --build --emitDeclarationOnly"
+            },
+            "cache": true,
+            "inputs": [
+              "{projectRoot}/package.json",
+              "{workspaceRoot}/tsconfig.base.json",
+              "{projectRoot}/tsconfig.json",
+              "{projectRoot}/tsconfig.lib.json",
+              "{projectRoot}/src/**/*.js",
+              "{projectRoot}/src/**/*.jsx",
+              "{projectRoot}/src/**/*.ts",
+              "{projectRoot}/src/**/*.tsx",
+              "!{projectRoot}/out-tsc",
+              "!{projectRoot}/dist",
+              "!{projectRoot}/jest.config.ts",
+              "!{projectRoot}/src/**/*.spec.ts",
+              "!{projectRoot}/src/**/*.test.ts",
+              "!{projectRoot}/src/**/*.spec.tsx",
+              "!{projectRoot}/src/**/*.test.tsx",
+              "!{projectRoot}/src/**/*.spec.js",
+              "!{projectRoot}/src/**/*.test.js",
+              "!{projectRoot}/src/**/*.spec.jsx",
+              "!{projectRoot}/src/**/*.test.jsx",
+              "!{projectRoot}/eslint.config.js",
+              "!{projectRoot}/eslint.config.cjs",
+              "!{projectRoot}/eslint.config.mjs",
+              "^production"
+            ],
+            "outputs": [
+              "{projectRoot}/dist/**/*.d.ts",
+              "{projectRoot}/dist/**/*.d.ts.map",
+              "{projectRoot}/dist/tsconfig.lib.tsbuildinfo"
+            ],
+            "syncGenerators": [
+              "@nx/js:typescript-sync"
+            ],
+            "metadata": {
+              "technologies": [
+                "typescript"
+              ],
+              "description": "Runs type-checking for the project.",
+              "help": {
+                "command": "pnpm exec tsc --build --help",
+                "example": {
+                  "args": [
+                    "--force"
+                  ]
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "lint": {
+            "cache": true,
+            "options": {
+              "cwd": "libs/shared-ui",
+              "command": "eslint ."
+            },
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}/eslint.config.mjs",
+              "{workspaceRoot}/libs/shared-ui/eslint.config.mjs",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "metadata": {
+              "technologies": [
+                "eslint"
+              ],
+              "description": "Runs ESLint on project",
+              "help": {
+                "command": "pnpm exec eslint --help",
+                "example": {
+                  "options": {
+                    "max-warnings": 0
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "name": "@nx/shared-ui",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {},
+          "js": {
+            "packageName": "@nx/shared-ui",
+            "packageVersion": "0.0.1",
+            "packageExports": {
+              ".": {
+                "types": "./src/index.ts",
+                "import": "./src/index.ts",
+                "default": "./src/index.ts"
+              },
+              "./package.json": "./package.json"
+            },
+            "packageMain": "./src/index.ts",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "transfers": {
       "name": "transfers",
       "type": "app",
@@ -15911,6 +16050,18 @@
         "type": "static"
       }
     ],
+    "@nx/shared-ui": [
+      {
+        "source": "@nx/shared-ui",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "@nx/shared-ui",
+        "target": "npm:react",
+        "type": "static"
+      }
+    ],
     "transfers": [
       {
         "source": "transfers",
@@ -15925,11 +16076,6 @@
       {
         "source": "transfers",
         "target": "npm:react",
-        "type": "static"
-      },
-      {
-        "source": "transfers",
-        "target": "npm:react-router-dom",
         "type": "static"
       },
       {
@@ -37184,5 +37330,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1773114548890
+  "computedAt": 1773116623163
 }
