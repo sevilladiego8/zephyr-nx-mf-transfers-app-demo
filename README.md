@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="./imgs/transfer-app-diagram.jpg" alt="Federated Transfers Zephyr NX App Diagram" >
+  <img src="./imgs/transnfers-app-nx-diagram.drawio.png" alt="Federated Transfers Zephyr NX App Diagram" >
 <br>
 <br>
 Federated Transfers Demo App with Zaphyr, NX, Rspack and React  
@@ -34,11 +34,18 @@ npx nx g @nx/react:library libs/shared-styles --style=scss --bundler=none --js=f
 npx nx g @nx/react:app apps/ui-playground --bundler=rspack --style=scss --js=false
 
 # create new remote
-npx nx g @nx/react:remote apps/ui-playground --bundler=rspack --style=scss --js=false
+npx nx g @nx/react:remote apps/micro-app --bundler=rspack --style=scss --js=false
 
 #remove apps
-npx nx g @nx/workspace:remove ui-playground
-
+npx nx g @nx/workspace:remove micro-app
 
 npx nx g @nx/react:host apps/consumer @nx/react:remote apps/transfers @nx/react:remote apps/reports --bundler=rspack --style=scss --js=false
 ```
+
+# Issues
+
+1. Imports from `shared-ui` don't work. 
+```bash
+'rootDir' is expected to contain all source files.ts(6059)
+```
+2. Aliases could be added to `scss` files for shorter import paths
