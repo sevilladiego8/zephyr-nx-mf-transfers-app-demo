@@ -48,28 +48,36 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "14586020543662210857"
+      },
+      {
+        "file": "README.md",
+        "hash": "462076780295287937"
+      },
+      {
         "file": "package.json",
         "hash": "5527358582736727138"
       },
       {
-        "file": "jest.config.ts",
-        "hash": "6870352021923392442"
+        "file": ".vscode/extensions.json",
+        "hash": "4637156562308165301"
       },
       {
         "file": "nx.json",
         "hash": "7269517663834094071"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "9352238202521633457"
-      },
-      {
-        "file": "imgs/transnfers-app-nx-diagram.drawio.png",
-        "hash": "15197236503460545993"
-      },
-      {
         "file": "pnpm-lock.yaml",
         "hash": "5665644714858847601"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "6870352021923392442"
       },
       {
         "file": ".prettierrc",
@@ -80,24 +88,16 @@
         "hash": "5443105041930014821"
       },
       {
-        "file": "eslint.config.mjs",
-        "hash": "10770449096712831357"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "4637156562308165301"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "14586020543662210857"
+        "file": "tsconfig.base.json",
+        "hash": "9352238202521633457"
       },
       {
         "file": ".gitignore",
         "hash": "9793543808687518483"
+      },
+      {
+        "file": "eslint.config.mjs",
+        "hash": "10770449096712831357"
       },
       {
         "file": "jest.preset.js",
@@ -108,8 +108,8 @@
         "hash": "6820106938215623083"
       },
       {
-        "file": "README.md",
-        "hash": "8452396303004183444"
+        "file": "imgs/transnfers-app-nx-diagram.drawio.png",
+        "hash": "15197236503460545993"
       }
     ],
     "projectFileMap": {

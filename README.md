@@ -21,6 +21,17 @@ The example is basically a demo transfers app with different pages which can be 
 - TypeScript 📘 - 5.9.3
 - Bootstrap 💄 - 5.3.8
 
+# Development
+
+> You will need to create a zephyr account to manage your deployed applications
+
+1. Install the necessary dependencies using `pnpm install`(recommended) or `npm install`.
+2. Install dependecies in `root` directory
+4. run `npm run dev`
+
+# Deployment
+
+1. run `npm run build`
 
 # Useful NX Commands
 
