@@ -16834,6 +16834,11 @@
       },
       {
         "source": "consumer",
+        "target": "npm:bootstrap",
+        "type": "static"
+      },
+      {
+        "source": "consumer",
         "target": "npm:@nx/react",
         "type": "static"
       }
@@ -38096,5 +38101,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1773125327788
+  "computedAt": 1773125887670
 }

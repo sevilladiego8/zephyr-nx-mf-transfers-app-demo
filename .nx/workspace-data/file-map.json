@@ -48,52 +48,20 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "9793543808687518483"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "4637156562308165301"
-      },
-      {
-        "file": "README.md",
-        "hash": "13416610742745038813"
+        "file": "tsconfig.json",
+        "hash": "14586020543662210857"
       },
       {
         "file": "eslint.config.mjs",
         "hash": "10770449096712831357"
       },
       {
-        "file": "imgs/transnfers-app-nx-diagram.drawio.png",
-        "hash": "15197236503460545993"
-      },
-      {
         "file": "jest.config.ts",
         "hash": "6870352021923392442"
       },
       {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": "nx.json",
-        "hash": "7269517663834094071"
-      },
-      {
-        "file": "package.json",
-        "hash": "5527358582736727138"
+        "file": "README.md",
+        "hash": "4423225670152980453"
       },
       {
         "file": "pnpm-lock.yaml",
@@ -104,12 +72,44 @@
         "hash": "6820106938215623083"
       },
       {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "9793543808687518483"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
         "file": "tsconfig.base.json",
         "hash": "9352238202521633457"
       },
       {
-        "file": "tsconfig.json",
-        "hash": "14586020543662210857"
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": "imgs/transnfers-app-nx-diagram.drawio.png",
+        "hash": "15197236503460545993"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4637156562308165301"
+      },
+      {
+        "file": "nx.json",
+        "hash": "7269517663834094071"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": "package.json",
+        "hash": "5527358582736727138"
       }
     ],
     "projectFileMap": {
@@ -247,16 +247,17 @@
         },
         {
           "file": "apps/consumer/src/bootstrap.tsx",
-          "hash": "14488468964003688630",
+          "hash": "2787429486609341084",
           "deps": [
             "npm:react",
             "npm:react-dom",
-            "npm:react-router-dom"
+            "npm:react-router-dom",
+            "npm:bootstrap"
           ]
         },
         {
           "file": "apps/consumer/src/components/Navbar/Navbar.tsx",
-          "hash": "6622456448755208281",
+          "hash": "9846188047160488533",
           "deps": [
             "npm:react-router-dom"
           ]

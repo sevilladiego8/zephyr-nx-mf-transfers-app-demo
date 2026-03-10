@@ -29,7 +29,7 @@ const Navbar = (props: NavBarProps) => {
 
         <div
           className="offcanvas offcanvas-end"
-          tabIndex={Number("-1")}
+          tabIndex={-1}
           id="mainNavbar"
           aria-labelledby="mainNavbarLabel"
         >
