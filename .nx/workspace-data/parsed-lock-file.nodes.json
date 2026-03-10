@@ -3311,6 +3311,15 @@
       "hash": "sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww=="
     }
   },
+  "npm:@popperjs/core": {
+    "type": "npm",
+    "name": "npm:@popperjs/core",
+    "data": {
+      "version": "2.11.8",
+      "packageName": "@popperjs/core",
+      "hash": "sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A=="
+    }
+  },
   "npm:@remix-run/router": {
     "type": "npm",
     "name": "npm:@remix-run/router",
@@ -6027,6 +6036,15 @@
       "version": "1.0.0",
       "packageName": "boolbase",
       "hash": "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="
+    }
+  },
+  "npm:bootstrap": {
+    "type": "npm",
+    "name": "npm:bootstrap",
+    "data": {
+      "version": "5.3.8",
+      "packageName": "bootstrap",
+      "hash": "sha512-HP1SZDqaLDPwsNiqRqi5NcP0SSXciX2s9E+RyqJIIqGo+vJeN5AJVM98CXmW/Wux0nQ5L7jeWUdplCEf0Ee+tg=="
     }
   },
   "npm:brace-expansion@1.1.12": {

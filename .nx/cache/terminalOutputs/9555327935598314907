@@ -1,18 +1,18 @@
-(node:390094) [DEP0128] DeprecationWarning: Invalid 'main' field in '/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/node_modules/zephyr-rspack-plugin/dist/package.json' of 'dist/index.js'. Please either fix that or report it to the module author
+(node:686824) [DEP0128] DeprecationWarning: Invalid 'main' field in '/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/node_modules/zephyr-rspack-plugin/dist/package.json' of 'dist/index.js'. Please either fix that or report it to the module author
 (Use `node --trace-deprecation ...` to show where the warning was created)
-(node:390094) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(node:686824) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 [1m[106m[30m ZEPHYR [39m[49m[22m  No zephyr:dependencies found in package.json, to give you more control over your dependencies, check out our documentation:
 [1m[106m[30m ZEPHYR [39m[49m[22m  https://docs.zephyr-cloud.io/features/remote-dependencies
 [36m[ Module Federation Manifest Plugin ][39m Manifest will use absolute path resolution via its host at runtime, reason: publicPath='auto'
 [1m[106m[30m ZEPHYR [39m[49m[22m  Hi [96mds_dev[39m!
-[1m[106m[30m ZEPHYR [39m[49m[22m  [37mtransfers.zephyr-nx-mf-transfers-app-demo.sevilladiego8[39m[33m#994[39m
+[1m[106m[30m ZEPHYR [39m[49m[22m  [37mtransfers.zephyr-nx-mf-transfers-app-demo.sevilladiego8[39m[33m#1031[39m
 [1m[106m[30m ZEPHYR [39m[49m[22m  
-[1m[106m[30m ZEPHYR [39m[49m[22m  [37m([97m2[37m/[37m13[37m assets uploaded in [97m575[37mms, [97m0.21[37mkb)[39m
-[1m[106m[30m ZEPHYR [39m[49m[22m  Uploaded [32mlocal[39m snapshot in [33m580[39mms
-[1m[106m[30m ZEPHYR [39m[49m[22m  Deployed to [96mZephyr[39m's edge in [33m996[39mms.
+[1m[106m[30m ZEPHYR [39m[49m[22m  Uploaded [32mlocal[39m snapshot in [33m503[39mms
+[1m[106m[30m ZEPHYR [39m[49m[22m  [37m([97m2[37m/[37m13[37m assets uploaded in [97m554[37mms, [97m0.21[37mkb)[39m
+[1m[106m[30m ZEPHYR [39m[49m[22m  Deployed to [96mZephyr[39m's edge in [33m877[39mms.
 [1m[106m[30m ZEPHYR [39m[49m[22m  
-[1m[106m[30m ZEPHYR [39m[49m[22m  [96mhttps://ds-dev-994-transfers-zephyr-nx-mf-transfers-app-d-e50568ffc-ze.zephyrcloud.app[39m
+[1m[106m[30m ZEPHYR [39m[49m[22m  [96mhttps://ds-dev-1031-transfers-zephyr-nx-mf-transfers-app--fe92cb0f3-ze.zephyrcloud.app[39m
 
 chunk (runtime: transfers) [1m[32m__federation_expose_Module.9193cc93a3500408.js[39m[22m (__federation_expose_Module) 42 bytes (consume-shared) 460 bytes (javascript) [1m[32m[rendered][39m[22m
 chunk (runtime: main, transfers) [1m[32m16.64d90378247427a0.js[39m[22m (id hint: vendors) 535 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m

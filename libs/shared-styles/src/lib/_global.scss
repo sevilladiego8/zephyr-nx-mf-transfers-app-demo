@@ -1,0 +1,10 @@
+$primary: #5b21b6;
+$border-radius: 0.75rem;
+
+// Import all Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Your app styles
+body {
+  background-color: #f0f7ff;
+}

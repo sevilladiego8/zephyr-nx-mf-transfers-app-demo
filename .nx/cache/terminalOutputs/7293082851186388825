@@ -1,0 +1,24 @@
+(node:696192) [DEP0128] DeprecationWarning: Invalid 'main' field in '/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/node_modules/zephyr-rspack-plugin/dist/package.json' of 'dist/index.js'. Please either fix that or report it to the module author
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:696192) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[1m[106m[30m ZEPHYR [39m[49m[22m  No zephyr:dependencies found in package.json, to give you more control over your dependencies, check out our documentation:
+[1m[106m[30m ZEPHYR [39m[49m[22m  https://docs.zephyr-cloud.io/features/remote-dependencies
+[36m[ Module Federation Manifest Plugin ][39m Manifest will use absolute path resolution via its host at runtime, reason: publicPath='auto'
+[1m[106m[30m ZEPHYR [39m[49m[22m  Hi [96mds_dev[39m!
+[1m[106m[30m ZEPHYR [39m[49m[22m  [37mbalances.zephyr-nx-mf-transfers-app-demo.sevilladiego8[39m[33m#1035[39m
+[1m[106m[30m ZEPHYR [39m[49m[22m  
+[1m[106m[30m ZEPHYR [39m[49m[22m  [37m([97m2[37m/[37m13[37m assets uploaded in [97m420[37mms, [97m0.21[37mkb)[39m
+[1m[106m[30m ZEPHYR [39m[49m[22m  Uploaded [32mlocal[39m snapshot in [33m426[39mms
+[1m[106m[30m ZEPHYR [39m[49m[22m  Deployed to [96mZephyr[39m's edge in [33m753[39mms.
+[1m[106m[30m ZEPHYR [39m[49m[22m  
+[1m[106m[30m ZEPHYR [39m[49m[22m  [96mhttps://ds-dev-1035-balances-zephyr-nx-mf-transfers-app-d-15ec11c92-ze.zephyrcloud.app[39m
+
+chunk (runtime: balances) [1m[32m__federation_expose_Module.fff392abb3b9b1fc.js[39m[22m (__federation_expose_Module) 42 bytes (consume-shared) 460 bytes (javascript) [1m[32m[rendered][39m[22m
+chunk (runtime: balances, main) [1m[32m16.f284d169ade33d95.js[39m[22m (id hint: vendors) 535 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: balances, main) 42 bytes
+chunk (runtime: main) [1m[32m627.d7af13da54f3ebf3.js[39m[22m 84 bytes (consume-shared) 740 bytes (javascript) [1m[32m[rendered][39m[22m
+chunk (runtime: balances, main) [1m[32m711.61e10e9bcd8ef71e.js[39m[22m 1.16 KiB [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32mmain.039bcfbf108c6520.js[39m[22m (main) 42 bytes (consume-shared) 227 KiB (javascript) 10.4 KiB (runtime) 168 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: balances) [1m[32mremoteEntry.js[39m[22m (balances) 42 bytes (consume-shared) 42 bytes (expose) 227 KiB (javascript) 10.9 KiB (runtime) 168 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+Rspack compiled [1m[32msuccessfully[39m[22m (aeac3b4ba9a282a2)

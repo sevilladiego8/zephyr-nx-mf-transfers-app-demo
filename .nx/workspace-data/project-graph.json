@@ -1,5 +1,144 @@
 {
   "nodes": {
+    "shared-styles": {
+      "name": "shared-styles",
+      "type": "lib",
+      "data": {
+        "root": "libs/shared-styles",
+        "targets": {
+          "typecheck": {
+            "dependsOn": [
+              "^typecheck"
+            ],
+            "options": {
+              "cwd": "libs/shared-styles",
+              "command": "tsc --build --emitDeclarationOnly"
+            },
+            "cache": true,
+            "inputs": [
+              "{projectRoot}/package.json",
+              "{workspaceRoot}/tsconfig.base.json",
+              "{projectRoot}/tsconfig.json",
+              "{projectRoot}/tsconfig.lib.json",
+              "{projectRoot}/src/**/*.js",
+              "{projectRoot}/src/**/*.jsx",
+              "{projectRoot}/src/**/*.ts",
+              "{projectRoot}/src/**/*.tsx",
+              "!{projectRoot}/out-tsc",
+              "!{projectRoot}/dist",
+              "!{projectRoot}/jest.config.ts",
+              "!{projectRoot}/src/**/*.spec.ts",
+              "!{projectRoot}/src/**/*.test.ts",
+              "!{projectRoot}/src/**/*.spec.tsx",
+              "!{projectRoot}/src/**/*.test.tsx",
+              "!{projectRoot}/src/**/*.spec.js",
+              "!{projectRoot}/src/**/*.test.js",
+              "!{projectRoot}/src/**/*.spec.jsx",
+              "!{projectRoot}/src/**/*.test.jsx",
+              "!{projectRoot}/eslint.config.js",
+              "!{projectRoot}/eslint.config.cjs",
+              "!{projectRoot}/eslint.config.mjs",
+              "^production"
+            ],
+            "outputs": [
+              "{projectRoot}/dist/**/*.d.ts",
+              "{projectRoot}/dist/**/*.d.ts.map",
+              "{projectRoot}/dist/tsconfig.lib.tsbuildinfo"
+            ],
+            "syncGenerators": [
+              "@nx/js:typescript-sync"
+            ],
+            "metadata": {
+              "technologies": [
+                "typescript"
+              ],
+              "description": "Runs type-checking for the project.",
+              "help": {
+                "command": "pnpm exec tsc --build --help",
+                "example": {
+                  "args": [
+                    "--force"
+                  ]
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "lint": {
+            "cache": true,
+            "options": {
+              "cwd": "libs/shared-styles",
+              "command": "eslint ."
+            },
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}/eslint.config.mjs",
+              "{workspaceRoot}/libs/shared-styles/eslint.config.mjs",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "metadata": {
+              "technologies": [
+                "eslint"
+              ],
+              "description": "Runs ESLint on project",
+              "help": {
+                "command": "pnpm exec eslint --help",
+                "example": {
+                  "options": {
+                    "max-warnings": 0
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "name": "shared-styles",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {},
+          "js": {
+            "packageName": "shared-styles",
+            "packageVersion": "0.0.1",
+            "packageExports": {
+              ".": {
+                "types": "./src/index.ts",
+                "import": "./src/index.ts",
+                "default": "./src/index.ts"
+              },
+              "./package.json": "./package.json"
+            },
+            "packageMain": "./src/index.ts",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "transfers": {
       "name": "transfers",
       "type": "app",
@@ -16,24 +155,27 @@
             },
             "cache": true,
             "inputs": [
-              "production",
+              "{projectRoot}/package.json",
+              "{workspaceRoot}/tsconfig.base.json",
+              "{projectRoot}/tsconfig.json",
+              "{projectRoot}/tsconfig.app.json",
+              "{projectRoot}/src/**/*.js",
+              "{projectRoot}/src/**/*.jsx",
+              "{projectRoot}/src/**/*.ts",
+              "{projectRoot}/src/**/*.tsx",
+              "!{projectRoot}/src/**/*.spec.ts",
+              "!{projectRoot}/src/**/*.test.ts",
+              "!{projectRoot}/src/**/*.spec.tsx",
+              "!{projectRoot}/src/**/*.test.tsx",
+              "!{projectRoot}/src/**/*.spec.js",
+              "!{projectRoot}/src/**/*.test.js",
+              "!{projectRoot}/src/**/*.spec.jsx",
+              "!{projectRoot}/src/**/*.test.jsx",
               "^production"
             ],
             "outputs": [
-              "{projectRoot}/**/*.js",
-              "{projectRoot}/**/*.cjs",
-              "{projectRoot}/**/*.mjs",
-              "{projectRoot}/**/*.jsx",
-              "{projectRoot}/**/*.js.map",
-              "{projectRoot}/**/*.jsx.map",
-              "{projectRoot}/**/*.d.ts",
-              "{projectRoot}/**/*.d.cts",
-              "{projectRoot}/**/*.d.mts",
-              "{projectRoot}/**/*.d.ts.map",
-              "{projectRoot}/**/*.d.cts.map",
-              "{projectRoot}/**/*.d.mts.map",
-              "{projectRoot}/tsconfig.tsbuildinfo",
               "{workspaceRoot}/dist/out-tsc/**/*.d.ts",
+              "{workspaceRoot}/dist/out-tsc/**/*.d.ts.map",
               "{workspaceRoot}/dist/out-tsc/tsconfig.tsbuildinfo"
             ],
             "syncGenerators": [
@@ -72,6 +214,12 @@
               "assets": [
                 "apps/transfers/src/favicon.ico",
                 "apps/transfers/src/assets"
+              ],
+              "styles": [
+                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"
+              ],
+              "scripts": [
+                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
               ]
             },
             "configurations": {
@@ -229,24 +377,27 @@
             },
             "cache": true,
             "inputs": [
-              "production",
+              "{projectRoot}/package.json",
+              "{workspaceRoot}/tsconfig.base.json",
+              "{projectRoot}/tsconfig.json",
+              "{projectRoot}/tsconfig.app.json",
+              "{projectRoot}/src/**/*.js",
+              "{projectRoot}/src/**/*.jsx",
+              "{projectRoot}/src/**/*.ts",
+              "{projectRoot}/src/**/*.tsx",
+              "!{projectRoot}/src/**/*.spec.ts",
+              "!{projectRoot}/src/**/*.test.ts",
+              "!{projectRoot}/src/**/*.spec.tsx",
+              "!{projectRoot}/src/**/*.test.tsx",
+              "!{projectRoot}/src/**/*.spec.js",
+              "!{projectRoot}/src/**/*.test.js",
+              "!{projectRoot}/src/**/*.spec.jsx",
+              "!{projectRoot}/src/**/*.test.jsx",
               "^production"
             ],
             "outputs": [
-              "{projectRoot}/**/*.js",
-              "{projectRoot}/**/*.cjs",
-              "{projectRoot}/**/*.mjs",
-              "{projectRoot}/**/*.jsx",
-              "{projectRoot}/**/*.js.map",
-              "{projectRoot}/**/*.jsx.map",
-              "{projectRoot}/**/*.d.ts",
-              "{projectRoot}/**/*.d.cts",
-              "{projectRoot}/**/*.d.mts",
-              "{projectRoot}/**/*.d.ts.map",
-              "{projectRoot}/**/*.d.cts.map",
-              "{projectRoot}/**/*.d.mts.map",
-              "{projectRoot}/tsconfig.tsbuildinfo",
               "{workspaceRoot}/dist/out-tsc/**/*.d.ts",
+              "{workspaceRoot}/dist/out-tsc/**/*.d.ts.map",
               "{workspaceRoot}/dist/out-tsc/tsconfig.tsbuildinfo"
             ],
             "syncGenerators": [
@@ -442,24 +593,32 @@
             },
             "cache": true,
             "inputs": [
-              "production",
+              "{projectRoot}/package.json",
+              "{workspaceRoot}/tsconfig.base.json",
+              "{projectRoot}/tsconfig.json",
+              "{projectRoot}/tsconfig.app.json",
+              "{projectRoot}/src/**/*.js",
+              "{projectRoot}/src/**/*.jsx",
+              "{projectRoot}/src/**/*.ts",
+              "{projectRoot}/src/**/*.tsx",
+              "!{projectRoot}/out-tsc",
+              "!{projectRoot}/dist",
+              "!{projectRoot}/src/**/*.spec.ts",
+              "!{projectRoot}/src/**/*.test.ts",
+              "!{projectRoot}/src/**/*.spec.tsx",
+              "!{projectRoot}/src/**/*.test.tsx",
+              "!{projectRoot}/src/**/*.spec.js",
+              "!{projectRoot}/src/**/*.test.js",
+              "!{projectRoot}/src/**/*.spec.jsx",
+              "!{projectRoot}/src/**/*.test.jsx",
+              "!{projectRoot}/eslint.config.js",
+              "!{projectRoot}/eslint.config.cjs",
+              "!{projectRoot}/eslint.config.mjs",
               "^production"
             ],
             "outputs": [
-              "{projectRoot}/**/*.js",
-              "{projectRoot}/**/*.cjs",
-              "{projectRoot}/**/*.mjs",
-              "{projectRoot}/**/*.jsx",
-              "{projectRoot}/**/*.js.map",
-              "{projectRoot}/**/*.jsx.map",
-              "{projectRoot}/**/*.d.ts",
-              "{projectRoot}/**/*.d.cts",
-              "{projectRoot}/**/*.d.mts",
-              "{projectRoot}/**/*.d.ts.map",
-              "{projectRoot}/**/*.d.cts.map",
-              "{projectRoot}/**/*.d.mts.map",
-              "{projectRoot}/tsconfig.tsbuildinfo",
               "{projectRoot}/dist/**/*.d.ts",
+              "{projectRoot}/dist/**/*.d.ts.map",
               "{projectRoot}/dist/tsconfig.app.tsbuildinfo"
             ],
             "syncGenerators": [
@@ -498,6 +657,12 @@
               "assets": [
                 "apps/consumer/src/favicon.ico",
                 "apps/consumer/src/assets"
+              ],
+              "styles": [
+                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"
+              ],
+              "scripts": [
+                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
               ]
             },
             "configurations": {
@@ -3947,6 +4112,15 @@
         "hash": "sha512-wwQAWhWSuHaag8c4q/KN/vCoeOJYshAIvMQwD4GpSb3OiZklFfvAgmj0VCBBImRpuF/aFgIRzllXlVX93Jevww=="
       }
     },
+    "npm:@popperjs/core": {
+      "type": "npm",
+      "name": "npm:@popperjs/core",
+      "data": {
+        "version": "2.11.8",
+        "packageName": "@popperjs/core",
+        "hash": "sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A=="
+      }
+    },
     "npm:@remix-run/router": {
       "type": "npm",
       "name": "npm:@remix-run/router",
@@ -6663,6 +6837,15 @@
         "version": "1.0.0",
         "packageName": "boolbase",
         "hash": "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="
+      }
+    },
+    "npm:bootstrap": {
+      "type": "npm",
+      "name": "npm:bootstrap",
+      "data": {
+        "version": "5.3.8",
+        "packageName": "bootstrap",
+        "hash": "sha512-HP1SZDqaLDPwsNiqRqi5NcP0SSXciX2s9E+RyqJIIqGo+vJeN5AJVM98CXmW/Wux0nQ5L7jeWUdplCEf0Ee+tg=="
       }
     },
     "npm:brace-expansion@1.1.12": {
@@ -15721,6 +15904,13 @@
     }
   },
   "dependencies": {
+    "shared-styles": [
+      {
+        "source": "shared-styles",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      }
+    ],
     "transfers": [
       {
         "source": "transfers",
@@ -15735,6 +15925,11 @@
       {
         "source": "transfers",
         "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "transfers",
+        "target": "npm:react-router-dom",
         "type": "static"
       },
       {
@@ -25053,6 +25248,13 @@
       {
         "source": "npm:bonjour-service",
         "target": "npm:multicast-dns",
+        "type": "static"
+      }
+    ],
+    "npm:bootstrap": [
+      {
+        "source": "npm:bootstrap",
+        "target": "npm:@popperjs/core",
         "type": "static"
       }
     ],
@@ -36982,5 +37184,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1773090909459
+  "computedAt": 1773114301611
 }

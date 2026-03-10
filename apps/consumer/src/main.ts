@@ -1,1 +1,2 @@
-import('./bootstrap').catch(err => console.error(err));
+import './scss/styles.scss';
+import('./bootstrap').catch((err) => console.error(err));

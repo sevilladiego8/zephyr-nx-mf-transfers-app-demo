@@ -1,0 +1,16 @@
+[4m[34msrc/components/Navbar/Navbar.tsx:4:43[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'federated_shared_ui/button' or its corresponding type declarations.
+
+[0m [90m 2 | [39m[36mimport[39m { [33mLink[39m } from [32m"react-router-dom"[39m[33m;[39m[0m
+[0m [90m 3 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 4 | [39m[36mconst[39m [33mFederatedButton[39m [33m=[39m lazy(() [33m=>[39m [36mimport[39m([32m"federated_shared_ui/button"[39m))[33m;[39m[0m
+[0m [90m   | [39m                                          [31m[1m^[22m[39m[0m
+[0m [90m 5 | [39m[0m
+[0m [90m 6 | [39mtype [33mNavBarProps[39m [33m=[39m {[0m
+[0m [90m 7 | [39m  links[33m:[39m { label[33m:[39m string[33m;[39m href[33m:[39m string }[][33m;[39m[0m
+
+Found 1 error.
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mFound type errors. See above.[39m
+
+Pass --verbose to see the stacktrace.
+

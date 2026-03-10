@@ -15,7 +15,13 @@
         "main": "apps/transfers/src/main.ts",
         "tsConfig": "apps/transfers/tsconfig.app.json",
         "rspackConfig": "apps/transfers/rspack.config.ts",
-        "assets": ["apps/transfers/src/favicon.ico", "apps/transfers/src/assets"]
+        "assets": ["apps/transfers/src/favicon.ico", "apps/transfers/src/assets"],
+        "styles": [
+          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"
+        ],
+        "scripts": [
+          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+        ]
       },
       "configurations": {
         "development": {

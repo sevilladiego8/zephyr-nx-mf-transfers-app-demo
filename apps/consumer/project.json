@@ -16,7 +16,9 @@
         "main": "apps/consumer/src/main.ts",
         "tsConfig": "apps/consumer/tsconfig.app.json",
         "rspackConfig": "apps/consumer/rspack.config.ts",
-        "assets": ["apps/consumer/src/favicon.ico", "apps/consumer/src/assets"]
+        "assets": ["apps/consumer/src/favicon.ico", "apps/consumer/src/assets"],
+        "styles": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"],
+        "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
       },
       "configurations": {
         "development": {

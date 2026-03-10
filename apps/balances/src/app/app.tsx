@@ -1,6 +1,8 @@
+import classes from './app.module.scss';
+
 export function App() {
   return (
-    <div>
+    <div className={classes['generic-page']}>
       <h1>Remote 2</h1>
       <p>This is the Remote 2 application loaded via Module Federation</p>
     </div>

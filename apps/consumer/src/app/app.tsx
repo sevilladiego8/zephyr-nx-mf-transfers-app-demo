@@ -1,37 +1,36 @@
-import * as React from 'react';
+import { Suspense, lazy } from 'react';
 
-import NxWelcome from './nx-welcome';
+import { Route, Routes } from 'react-router-dom';
 
-import { Link, Route, Routes } from 'react-router-dom';
+import Navbar from '../components/Navbar/Navbar';
+const FederatedTransfersPage = lazy(() => import('transfers/Module'));
+const FederatedBalancesPage = lazy(() => import('balances/Module'));
 
-const FederatedTransfers = React.lazy(() => import('transfers/Module'));
-const FederatedBalances = React.lazy(() => import('balances/Module'));
+const App = () => {
+  const links = [
+    { label: 'Transfers', href: '/' },
+    { label: 'Balances', href: '/balances' },
+    { label: 'Reports', href: '/reports' },
+    { label: 'Ledger', href: '/ledger' },
+    { label: 'Settings', href: '/settings' },
+  ];
 
-export function App() {
   return (
-    <React.Suspense fallback={null}>
-      <ul>
-        <li>
-          <Link to="/">Homee</Link>
-        </li>
-
-        <li>
-          <Link to="/transfers">transferss</Link>
-        </li>
-
-        <li>
-          <Link to="/balances">balancess</Link>
-        </li>
-      </ul>
-      <Routes>
-        <Route path="/" element={<NxWelcome title="consumer" />} />
-
-        <Route path="/transfers" element={<FederatedTransfers />} />
-
-        <Route path="/balances" element={<FederatedBalances />} />
-      </Routes>
-    </React.Suspense>
+    <>
+      <Navbar links={links} />
+      <main>
+        <Suspense fallback={null}>
+          <Routes>
+            <Route path="/" element={<FederatedTransfersPage />} />
+            <Route path="/balances" element={<FederatedBalancesPage />} />
+            <Route path="/reports" element={<FederatedTransfersPage />} />
+            <Route path="/ledger" element={<FederatedTransfersPage />} />
+            <Route path="/settings" element={<FederatedTransfersPage />} />
+          </Routes>
+        </Suspense>
+      </main>
+    </>
   );
-}
+};
 
 export default App;

@@ -8440,6 +8440,11 @@
     "type": "static"
   },
   {
+    "source": "npm:bootstrap",
+    "target": "npm:@popperjs/core",
+    "type": "static"
+  },
+  {
     "source": "npm:brace-expansion@1.1.12",
     "target": "npm:balanced-match@1.0.2",
     "type": "static"

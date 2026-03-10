@@ -1,0 +1,14 @@
+[4m[34msrc/components/Navbar/Navbar.tsx:1:1[39m[24m - [31m[1merror[22m[39m [90mTS6133[39m: 'lazy' is declared but its value is never read.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m { lazy } from [32m"react"[39m[33m;[39m[0m
+[0m [90m   | [39m[31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m { [33mLink[39m } from [32m"react-router-dom"[39m[33m;[39m[0m
+[0m [90m 3 | [39m[0m
+[0m [90m 4 | [39m[90m// const FederatedButton = lazy(() => import("federated_shared_ui/button"));[39m[0m
+
+Found 1 error.
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mFound type errors. See above.[39m
+
+Pass --verbose to see the stacktrace.
+
