@@ -5,7 +5,7 @@ const coreLibraries = new Set([
   'react-router-dom',
   // A workspace library for a publish/subscribe
   // system of communication.
-  '@nx/shared-ui',
+  '@nx/shared-ui', // doesn't work
 ]);
 
 const config = {

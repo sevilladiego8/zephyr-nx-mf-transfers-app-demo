@@ -91,7 +91,7 @@
     },
     "metadata": {}
   },
-  "1754442910941513419_apps/consumer/rspack.config.ts": {
+  "287141728308587443_apps/consumer/rspack.config.ts": {
     "targets": {
       "build": {
         "command": "rspack build",
@@ -179,288 +179,6 @@
           "build-deps"
         ],
         "command": "pnpm exec nx watch --projects consumer --includeDependentProjects -- pnpm exec nx build-deps consumer"
-      }
-    },
-    "metadata": {}
-  },
-  "1513664240151817437_apps/transfers/rspack.config.ts": {
-    "targets": {
-      "build": {
-        "command": "rspack build",
-        "options": {
-          "cwd": "apps/transfers",
-          "args": [
-            "--node-env=production"
-          ],
-          "env": {
-            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
-          }
-        },
-        "cache": true,
-        "dependsOn": [
-          "^build"
-        ],
-        "inputs": [
-          "production",
-          "^production",
-          {
-            "externalDependencies": [
-              "@rspack/cli"
-            ]
-          }
-        ],
-        "outputs": [],
-        "syncGenerators": [
-          "@nx/js:typescript-sync"
-        ]
-      },
-      "serve": {
-        "continuous": true,
-        "command": "rspack serve",
-        "options": {
-          "cwd": "apps/transfers",
-          "args": [
-            "--node-env=development"
-          ],
-          "env": {
-            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
-          }
-        },
-        "syncGenerators": [
-          "@nx/js:typescript-sync"
-        ]
-      },
-      "preview": {
-        "continuous": true,
-        "command": "rspack serve",
-        "options": {
-          "cwd": "apps/transfers",
-          "args": [
-            "--node-env=production"
-          ],
-          "env": {
-            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
-          }
-        },
-        "syncGenerators": [
-          "@nx/js:typescript-sync"
-        ]
-      },
-      "serve-static": {
-        "dependsOn": [
-          "build"
-        ],
-        "continuous": true,
-        "executor": "@nx/web:file-server",
-        "options": {
-          "buildTarget": "build",
-          "spa": true
-        },
-        "syncGenerators": [
-          "@nx/js:typescript-sync"
-        ]
-      },
-      "build-deps": {
-        "dependsOn": [
-          "^build"
-        ]
-      },
-      "watch-deps": {
-        "continuous": true,
-        "dependsOn": [
-          "build-deps"
-        ],
-        "command": "pnpm exec nx watch --projects transfers --includeDependentProjects -- pnpm exec nx build-deps transfers"
-      }
-    },
-    "metadata": {}
-  },
-  "2262997888073211639_apps/ledger/rspack.config.ts": {
-    "targets": {
-      "build": {
-        "command": "rspack build",
-        "options": {
-          "cwd": "apps/ledger",
-          "args": [
-            "--node-env=production"
-          ],
-          "env": {
-            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
-          }
-        },
-        "cache": true,
-        "dependsOn": [
-          "^build"
-        ],
-        "inputs": [
-          "production",
-          "^production",
-          {
-            "externalDependencies": [
-              "@rspack/cli"
-            ]
-          }
-        ],
-        "outputs": [
-          "{workspaceRoot}/apps/ledger/dist"
-        ],
-        "syncGenerators": [
-          "@nx/js:typescript-sync"
-        ]
-      },
-      "serve": {
-        "continuous": true,
-        "command": "rspack serve",
-        "options": {
-          "cwd": "apps/ledger",
-          "args": [
-            "--node-env=development"
-          ],
-          "env": {
-            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
-          }
-        },
-        "syncGenerators": [
-          "@nx/js:typescript-sync"
-        ]
-      },
-      "preview": {
-        "continuous": true,
-        "command": "rspack serve",
-        "options": {
-          "cwd": "apps/ledger",
-          "args": [
-            "--node-env=production"
-          ],
-          "env": {
-            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
-          }
-        },
-        "syncGenerators": [
-          "@nx/js:typescript-sync"
-        ]
-      },
-      "serve-static": {
-        "dependsOn": [
-          "build"
-        ],
-        "continuous": true,
-        "executor": "@nx/web:file-server",
-        "options": {
-          "buildTarget": "build",
-          "spa": true,
-          "port": 4203
-        },
-        "syncGenerators": [
-          "@nx/js:typescript-sync"
-        ]
-      },
-      "build-deps": {
-        "dependsOn": [
-          "^build"
-        ]
-      },
-      "watch-deps": {
-        "continuous": true,
-        "dependsOn": [
-          "build-deps"
-        ],
-        "command": "pnpm exec nx watch --projects ledger --includeDependentProjects -- pnpm exec nx build-deps ledger"
-      }
-    },
-    "metadata": {}
-  },
-  "13569649375142919414_apps/ledger/rspack.config.ts": {
-    "targets": {
-      "build": {
-        "command": "rspack build",
-        "options": {
-          "cwd": "apps/ledger",
-          "args": [
-            "--node-env=production"
-          ],
-          "env": {
-            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
-          }
-        },
-        "cache": true,
-        "dependsOn": [
-          "^build"
-        ],
-        "inputs": [
-          "production",
-          "^production",
-          {
-            "externalDependencies": [
-              "@rspack/cli"
-            ]
-          }
-        ],
-        "outputs": [
-          "{workspaceRoot}/apps/ledger/dist"
-        ],
-        "syncGenerators": [
-          "@nx/js:typescript-sync"
-        ]
-      },
-      "serve": {
-        "continuous": true,
-        "command": "rspack serve",
-        "options": {
-          "cwd": "apps/ledger",
-          "args": [
-            "--node-env=development"
-          ],
-          "env": {
-            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
-          }
-        },
-        "syncGenerators": [
-          "@nx/js:typescript-sync"
-        ]
-      },
-      "preview": {
-        "continuous": true,
-        "command": "rspack serve",
-        "options": {
-          "cwd": "apps/ledger",
-          "args": [
-            "--node-env=production"
-          ],
-          "env": {
-            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
-          }
-        },
-        "syncGenerators": [
-          "@nx/js:typescript-sync"
-        ]
-      },
-      "serve-static": {
-        "dependsOn": [
-          "build"
-        ],
-        "continuous": true,
-        "executor": "@nx/web:file-server",
-        "options": {
-          "buildTarget": "build",
-          "spa": true,
-          "port": 4203
-        },
-        "syncGenerators": [
-          "@nx/js:typescript-sync"
-        ]
-      },
-      "build-deps": {
-        "dependsOn": [
-          "^build"
-        ]
-      },
-      "watch-deps": {
-        "continuous": true,
-        "dependsOn": [
-          "build-deps"
-        ],
-        "command": "pnpm exec nx watch --projects ledger --includeDependentProjects -- pnpm exec nx build-deps ledger"
       }
     },
     "metadata": {}
@@ -553,6 +271,190 @@
           "build-deps"
         ],
         "command": "pnpm exec nx watch --projects ledger --includeDependentProjects -- pnpm exec nx build-deps ledger"
+      }
+    },
+    "metadata": {}
+  },
+  "11997974345496419785_apps/reports/rspack.config.ts": {
+    "targets": {
+      "build": {
+        "command": "rspack build",
+        "options": {
+          "cwd": "apps/reports",
+          "args": [
+            "--node-env=production"
+          ],
+          "env": {
+            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
+          }
+        },
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [
+          "production",
+          "^production",
+          {
+            "externalDependencies": [
+              "@rspack/cli"
+            ]
+          }
+        ],
+        "outputs": [],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ]
+      },
+      "serve": {
+        "continuous": true,
+        "command": "rspack serve",
+        "options": {
+          "cwd": "apps/reports",
+          "args": [
+            "--node-env=development"
+          ],
+          "env": {
+            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
+          }
+        },
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ]
+      },
+      "preview": {
+        "continuous": true,
+        "command": "rspack serve",
+        "options": {
+          "cwd": "apps/reports",
+          "args": [
+            "--node-env=production"
+          ],
+          "env": {
+            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
+          }
+        },
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ]
+      },
+      "serve-static": {
+        "dependsOn": [
+          "build"
+        ],
+        "continuous": true,
+        "executor": "@nx/web:file-server",
+        "options": {
+          "buildTarget": "build",
+          "spa": true
+        },
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ]
+      },
+      "build-deps": {
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "watch-deps": {
+        "continuous": true,
+        "dependsOn": [
+          "build-deps"
+        ],
+        "command": "pnpm exec nx watch --projects reports --includeDependentProjects -- pnpm exec nx build-deps reports"
+      }
+    },
+    "metadata": {}
+  },
+  "1513664240151817437_apps/transfers/rspack.config.ts": {
+    "targets": {
+      "build": {
+        "command": "rspack build",
+        "options": {
+          "cwd": "apps/transfers",
+          "args": [
+            "--node-env=production"
+          ],
+          "env": {
+            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
+          }
+        },
+        "cache": true,
+        "dependsOn": [
+          "^build"
+        ],
+        "inputs": [
+          "production",
+          "^production",
+          {
+            "externalDependencies": [
+              "@rspack/cli"
+            ]
+          }
+        ],
+        "outputs": [],
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ]
+      },
+      "serve": {
+        "continuous": true,
+        "command": "rspack serve",
+        "options": {
+          "cwd": "apps/transfers",
+          "args": [
+            "--node-env=development"
+          ],
+          "env": {
+            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
+          }
+        },
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ]
+      },
+      "preview": {
+        "continuous": true,
+        "command": "rspack serve",
+        "options": {
+          "cwd": "apps/transfers",
+          "args": [
+            "--node-env=production"
+          ],
+          "env": {
+            "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
+          }
+        },
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ]
+      },
+      "serve-static": {
+        "dependsOn": [
+          "build"
+        ],
+        "continuous": true,
+        "executor": "@nx/web:file-server",
+        "options": {
+          "buildTarget": "build",
+          "spa": true
+        },
+        "syncGenerators": [
+          "@nx/js:typescript-sync"
+        ]
+      },
+      "build-deps": {
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "watch-deps": {
+        "continuous": true,
+        "dependsOn": [
+          "build-deps"
+        ],
+        "command": "pnpm exec nx watch --projects transfers --includeDependentProjects -- pnpm exec nx build-deps transfers"
       }
     },
     "metadata": {}

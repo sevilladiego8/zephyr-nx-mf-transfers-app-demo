@@ -39,7 +39,7 @@
       "executor": "@nx/rspack:module-federation-dev-server",
       "options": {
         "buildTarget": "ledger:build:development",
-        "port": 4201
+        "port": 4203
       },
       "configurations": {
         "development": {},
@@ -57,7 +57,7 @@
       "options": {
         "buildTarget": "ledger:build",
         "watch": false,
-        "port": 4201
+        "port": 4203
       },
       "configurations": {
         "development": {
