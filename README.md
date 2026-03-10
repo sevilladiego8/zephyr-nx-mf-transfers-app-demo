@@ -3,7 +3,7 @@
   <img src="./imgs/transfer-app-diagram.jpg" alt="Federated Transfers Zephyr NX App Diagram" >
 <br>
 <br>
-Federated Transfers Demo App with Zaphyr, RsBuild and React  
+Federated Transfers Demo App with Zaphyr, NX, Rspack and React  
 </h1>
 <h2 align="center" >Version 1.0</h2>
 
@@ -15,8 +15,8 @@ The example is basically a demo transfers app with different pages which can be 
 
 # Tools
 
-- Zephyr Plugin 🚀 - 0.1.14
-- NxPack ✈️ - 22.0.2
+- Rspack Zephyr Plugin  🚀 - 0.1.14
+- NX ✈️ - 22.0.2
 - React 🌐 - 19.0.0
 - TypeScript 📘 - 5.9.3
 - Bootstrap 💄 - 5.3.8
