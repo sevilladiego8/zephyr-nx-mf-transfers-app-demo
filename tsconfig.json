@@ -17,6 +17,9 @@
     },
     {
       "path": "./apps/transfers"
+    },
+    {
+      "path": "./apps/reportss"
     }
   ]
 }

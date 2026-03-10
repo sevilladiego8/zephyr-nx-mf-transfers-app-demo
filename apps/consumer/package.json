@@ -5,6 +5,7 @@
   "zephyr:dependencies": {
     "transfers": "zephyr:transfers@*",
     "balances": "zephyr:balances@*",
-    "ledger": "zephyr:ledger@*"
+    "ledger": "zephyr:ledger@*",
+    "reportss": "zephyr:reportss@*"
   }
 }

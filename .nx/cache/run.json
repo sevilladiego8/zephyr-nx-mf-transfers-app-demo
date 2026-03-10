@@ -1,18 +1,18 @@
 {
   "run": {
-    "command": "nx run-many --target=build --projects=transfers,balances,ledger,reports,consumer --parallel=1 --skip-nx-cache",
-    "startTime": "2026-03-10T05:11:52.227Z",
-    "endTime": "2026-03-10T05:12:13.626Z",
+    "command": "nx run-many --target=build --projects=transfers,balances,ledger,reportss,consumer --parallel=1 --skip-nx-cache",
+    "startTime": "2026-03-10T05:37:37.148Z",
+    "endTime": "2026-03-10T05:37:58.619Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "reports:build:production",
+      "taskId": "reportss:build:production",
       "target": "build",
-      "projectName": "reports",
-      "hash": "7841461632142921178",
-      "startTime": "2026-03-10T05:11:52.235Z",
-      "endTime": "2026-03-10T05:11:56.118Z",
+      "projectName": "reportss",
+      "hash": "2003471533204657985",
+      "startTime": "2026-03-10T05:37:37.162Z",
+      "endTime": "2026-03-10T05:37:40.780Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -21,9 +21,9 @@
       "taskId": "balances:build:production",
       "target": "build",
       "projectName": "balances",
-      "hash": "9224594947749734679",
-      "startTime": "2026-03-10T05:11:56.124Z",
-      "endTime": "2026-03-10T05:12:00.132Z",
+      "hash": "7134750139965482622",
+      "startTime": "2026-03-10T05:37:40.786Z",
+      "endTime": "2026-03-10T05:37:45.099Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -32,9 +32,9 @@
       "taskId": "transfers:build:production",
       "target": "build",
       "projectName": "transfers",
-      "hash": "6714544589742829361",
-      "startTime": "2026-03-10T05:12:00.137Z",
-      "endTime": "2026-03-10T05:12:04.311Z",
+      "hash": "5651751979024538802",
+      "startTime": "2026-03-10T05:37:45.103Z",
+      "endTime": "2026-03-10T05:37:48.950Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -43,9 +43,9 @@
       "taskId": "ledger:build:production",
       "target": "build",
       "projectName": "ledger",
-      "hash": "13856550941709769605",
-      "startTime": "2026-03-10T05:12:04.315Z",
-      "endTime": "2026-03-10T05:12:08.368Z",
+      "hash": "14271303036803872627",
+      "startTime": "2026-03-10T05:37:48.955Z",
+      "endTime": "2026-03-10T05:37:53.427Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -54,9 +54,9 @@
       "taskId": "consumer:build:production",
       "target": "build",
       "projectName": "consumer",
-      "hash": "428885679871533342",
-      "startTime": "2026-03-10T05:12:08.374Z",
-      "endTime": "2026-03-10T05:12:13.622Z",
+      "hash": "9701857495413991194",
+      "startTime": "2026-03-10T05:37:53.433Z",
+      "endTime": "2026-03-10T05:37:58.614Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

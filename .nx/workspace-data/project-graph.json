@@ -926,22 +926,23 @@
         "implicitDependencies": [
           "transfers",
           "balances",
-          "ledger"
+          "ledger",
+          "reportss"
         ]
       }
     },
-    "reports": {
-      "name": "reports",
+    "reportss": {
+      "name": "reportss",
       "type": "app",
       "data": {
-        "root": "apps/reports",
+        "root": "apps/reportss",
         "targets": {
           "typecheck": {
             "dependsOn": [
               "^typecheck"
             ],
             "options": {
-              "cwd": "apps/reports",
+              "cwd": "apps/reportss",
               "command": "tsc --build --emitDeclarationOnly"
             },
             "cache": true,
@@ -954,8 +955,6 @@
               "{projectRoot}/src/**/*.jsx",
               "{projectRoot}/src/**/*.ts",
               "{projectRoot}/src/**/*.tsx",
-              "!{projectRoot}/out-tsc",
-              "!{projectRoot}/dist",
               "!{projectRoot}/src/**/*.spec.ts",
               "!{projectRoot}/src/**/*.test.ts",
               "!{projectRoot}/src/**/*.spec.tsx",
@@ -964,16 +963,12 @@
               "!{projectRoot}/src/**/*.test.js",
               "!{projectRoot}/src/**/*.spec.jsx",
               "!{projectRoot}/src/**/*.test.jsx",
-              "!{projectRoot}/jest.config.ts",
-              "!{projectRoot}/eslint.config.js",
-              "!{projectRoot}/eslint.config.cjs",
-              "!{projectRoot}/eslint.config.mjs",
               "^production"
             ],
             "outputs": [
-              "{projectRoot}/dist/**/*.d.ts",
-              "{projectRoot}/dist/**/*.d.ts.map",
-              "{projectRoot}/dist/tsconfig.app.tsbuildinfo"
+              "{workspaceRoot}/dist/out-tsc/**/*.d.ts",
+              "{workspaceRoot}/dist/out-tsc/**/*.d.ts.map",
+              "{workspaceRoot}/dist/out-tsc/tsconfig.tsbuildinfo"
             ],
             "syncGenerators": [
               "@nx/js:typescript-sync"
@@ -1004,13 +999,13 @@
             "defaultConfiguration": "production",
             "options": {
               "target": "web",
-              "outputPath": "dist/apps/reports",
-              "main": "apps/reports/src/main.ts",
-              "tsConfig": "apps/reports/tsconfig.app.json",
-              "rspackConfig": "apps/reports/rspack.config.ts",
+              "outputPath": "dist/apps/reportss",
+              "main": "apps/reportss/src/main.ts",
+              "tsConfig": "apps/reportss/tsconfig.app.json",
+              "rspackConfig": "apps/reportss/rspack.config.ts",
               "assets": [
-                "apps/reports/src/favicon.ico",
-                "apps/reports/src/assets"
+                "apps/reportss/src/favicon.ico",
+                "apps/reportss/src/assets"
               ],
               "styles": [
                 "node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"
@@ -1027,7 +1022,7 @@
                 "mode": "production",
                 "optimization": true,
                 "sourceMap": false,
-                "rspackConfig": "apps/reports/rspack.config.prod.ts"
+                "rspackConfig": "apps/reportss/rspack.config.prod.ts"
               }
             },
             "parallelism": true,
@@ -1046,13 +1041,13 @@
           "serve": {
             "executor": "@nx/rspack:module-federation-dev-server",
             "options": {
-              "buildTarget": "reports:build:development",
+              "buildTarget": "reportss:build:development",
               "port": 4204
             },
             "configurations": {
               "development": {},
               "production": {
-                "buildTarget": "reports:build:production"
+                "buildTarget": "reportss:build:production"
               }
             },
             "parallelism": true,
@@ -1061,7 +1056,7 @@
           "preview": {
             "continuous": true,
             "options": {
-              "cwd": "apps/reports",
+              "cwd": "apps/reportss",
               "args": [
                 "--node-env=production"
               ],
@@ -1088,17 +1083,17 @@
             ],
             "defaultConfiguration": "production",
             "options": {
-              "buildTarget": "reports:build",
+              "buildTarget": "reportss:build",
               "spa": true,
               "watch": false,
               "port": 4204
             },
             "configurations": {
               "development": {
-                "buildTarget": "reports:build:development"
+                "buildTarget": "reportss:build:development"
               },
               "production": {
-                "buildTarget": "reports:build:production"
+                "buildTarget": "reportss:build:production"
               }
             },
             "parallelism": true
@@ -1119,7 +1114,7 @@
             ],
             "executor": "nx:run-commands",
             "options": {
-              "command": "pnpm exec nx watch --projects reports --includeDependentProjects -- pnpm exec nx build-deps reports"
+              "command": "pnpm exec nx watch --projects reportss --includeDependentProjects -- pnpm exec nx build-deps reportss"
             },
             "configurations": {},
             "parallelism": true
@@ -1143,17 +1138,17 @@
         "metadata": {
           "targetGroups": {},
           "js": {
-            "packageName": "reports",
+            "packageName": "reportss",
             "packageVersion": "0.0.1",
             "isInPackageManagerWorkspaces": true
           }
         },
-        "name": "reports",
+        "name": "reportss",
         "tags": [
           "npm:public"
         ],
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
-        "sourceRoot": "apps/reports/src",
+        "sourceRoot": "apps/reportss/src",
         "projectType": "application",
         "implicitDependencies": []
       }
@@ -16573,6 +16568,11 @@
       },
       {
         "source": "consumer",
+        "target": "reportss",
+        "type": "implicit"
+      },
+      {
+        "source": "consumer",
         "target": "npm:@nx/eslint-plugin",
         "type": "static"
       },
@@ -16607,34 +16607,24 @@
         "type": "static"
       }
     ],
-    "reports": [
+    "reportss": [
       {
-        "source": "reports",
-        "target": "npm:@nx/eslint-plugin",
-        "type": "static"
-      },
-      {
-        "source": "reports",
-        "target": "npm:@nx/module-federation",
-        "type": "static"
-      },
-      {
-        "source": "reports",
+        "source": "reportss",
         "target": "npm:@nx/rspack",
         "type": "static"
       },
       {
-        "source": "reports",
+        "source": "reportss",
         "target": "npm:zephyr-rspack-plugin",
         "type": "static"
       },
       {
-        "source": "reports",
+        "source": "reportss",
         "target": "npm:react",
         "type": "static"
       },
       {
-        "source": "reports",
+        "source": "reportss",
         "target": "npm:react-dom",
         "type": "static"
       }
@@ -37848,5 +37838,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1773119763761
+  "computedAt": 1773121341488
 }

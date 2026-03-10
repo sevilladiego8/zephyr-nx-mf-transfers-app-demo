@@ -22,7 +22,7 @@ const config = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['transfers', 'balances', 'ledger'],
+  remotes: ['transfers', 'balances', 'ledger', 'reportss'],
   shared: (libraryName: any, defaultConfig: any) => {
     if (coreLibraries.has(libraryName)) {
       return defaultConfig;
