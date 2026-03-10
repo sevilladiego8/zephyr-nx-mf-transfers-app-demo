@@ -1,18 +1,29 @@
 {
   "run": {
-    "command": "nx run-many --target=build --projects=transfers,balances,consumer --parallel=1 --skip-nx-cache",
-    "startTime": "2026-03-10T04:23:43.195Z",
-    "endTime": "2026-03-10T04:23:57.890Z",
+    "command": "nx run-many --target=build --projects=transfers,balances,ledger,consumer --parallel=1 --skip-nx-cache",
+    "startTime": "2026-03-10T04:53:04.667Z",
+    "endTime": "2026-03-10T04:53:22.944Z",
     "inner": false
   },
   "tasks": [
     {
+      "taskId": "ledger:build:production",
+      "target": "build",
+      "projectName": "ledger",
+      "hash": "12639425688347495612",
+      "startTime": "2026-03-10T04:53:04.680Z",
+      "endTime": "2026-03-10T04:53:08.994Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
       "taskId": "transfers:build:production",
       "target": "build",
       "projectName": "transfers",
-      "hash": "10073716273721970290",
-      "startTime": "2026-03-10T04:23:43.207Z",
-      "endTime": "2026-03-10T04:23:47.880Z",
+      "hash": "6714544589742829361",
+      "startTime": "2026-03-10T04:53:08.999Z",
+      "endTime": "2026-03-10T04:53:13.471Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -21,9 +32,9 @@
       "taskId": "balances:build:production",
       "target": "build",
       "projectName": "balances",
-      "hash": "7417628990757011894",
-      "startTime": "2026-03-10T04:23:47.883Z",
-      "endTime": "2026-03-10T04:23:52.193Z",
+      "hash": "9224594947749734679",
+      "startTime": "2026-03-10T04:53:13.474Z",
+      "endTime": "2026-03-10T04:53:17.796Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -32,9 +43,9 @@
       "taskId": "consumer:build:production",
       "target": "build",
       "projectName": "consumer",
-      "hash": "12837026491463213239",
-      "startTime": "2026-03-10T04:23:52.196Z",
-      "endTime": "2026-03-10T04:23:57.886Z",
+      "hash": "6375299256303236184",
+      "startTime": "2026-03-10T04:53:17.802Z",
+      "endTime": "2026-03-10T04:53:22.940Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

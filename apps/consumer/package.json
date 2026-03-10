@@ -4,6 +4,7 @@
   "private": true,
   "zephyr:dependencies": {
     "transfers": "zephyr:transfers@*",
-    "balances": "zephyr:balances@*"
+    "balances": "zephyr:balances@*",
+    "ledger": "zephyr:ledger@*"
   }
 }

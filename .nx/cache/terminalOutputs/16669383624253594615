@@ -1,25 +1,25 @@
-(node:789787) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
+(node:804748) [DEP0180] DeprecationWarning: fs.Stats constructor is deprecated.
 (Use `node --trace-deprecation ...` to show where the warning was created)
 [1m[106m[30m ZEPHYR [39m[49m[22m  Hi [96mds_dev[39m!
-[1m[106m[30m ZEPHYR [39m[49m[22m  [37mconsumer.zephyr-nx-mf-transfers-app-demo.sevilladiego8[39m[33m#1071[39m
+[1m[106m[30m ZEPHYR [39m[49m[22m  [37mconsumer.zephyr-nx-mf-transfers-app-demo.sevilladiego8[39m[33m#1076[39m
 [1m[106m[30m ZEPHYR [39m[49m[22m  
 [1m[106m[30m ZEPHYR [39m[49m[22m  Resolved remotes:
-[1m[106m[30m ZEPHYR [39m[49m[22m    transfers → https://ds-dev-1069-transfers-zephyr-nx-mf-transfers-app--4563a0b00-ze.zephyrcloud.app/remoteEntry.js
-[1m[106m[30m ZEPHYR [39m[49m[22m    balances → https://ds-dev-1070-balances-zephyr-nx-mf-transfers-app-d-87e2a3c17-ze.zephyrcloud.app/remoteEntry.js
+[1m[106m[30m ZEPHYR [39m[49m[22m    transfers → https://ds-dev-1073-transfers-zephyr-nx-mf-transfers-app--4229d6601-ze.zephyrcloud.app/remoteEntry.js
+[1m[106m[30m ZEPHYR [39m[49m[22m    balances → https://ds-dev-1074-balances-zephyr-nx-mf-transfers-app-d-da5a8ec7d-ze.zephyrcloud.app/remoteEntry.js
 [36m[ Module Federation Manifest Plugin ][39m Manifest will use absolute path resolution via its host at runtime, reason: publicPath='auto'
-[1m[106m[30m ZEPHYR [39m[49m[22m  Uploaded [32mlocal[39m snapshot in [33m424[39mms
-[1m[106m[30m ZEPHYR [39m[49m[22m  [37m([97m6[37m/[37m12[37m assets uploaded in [97m734[37mms, [97m184.72[37mkb)[39m
+[1m[106m[30m ZEPHYR [39m[49m[22m  Uploaded [32mlocal[39m snapshot in [33m416[39mms
+[1m[106m[30m ZEPHYR [39m[49m[22m  [37m([97m7[37m/[37m12[37m assets uploaded in [97m720[37mms, [97m187.21[37mkb)[39m
 [1m[106m[30m ZEPHYR [39m[49m[22m  Resolved zephyr dependencies: transfers, balances
-[1m[106m[30m ZEPHYR [39m[49m[22m  Deployed to [96mZephyr[39m's edge in [33m853[39mms.
+[1m[106m[30m ZEPHYR [39m[49m[22m  Deployed to [96mZephyr[39m's edge in [33m832[39mms.
 [1m[106m[30m ZEPHYR [39m[49m[22m  
-[1m[106m[30m ZEPHYR [39m[49m[22m  [96mhttps://ds-dev-1071-consumer-zephyr-nx-mf-transfers-app-d-851b70028-ze.zephyrcloud.app[39m
+[1m[106m[30m ZEPHYR [39m[49m[22m  [96mhttps://ds-dev-1076-consumer-zephyr-nx-mf-transfers-app-d-b48bf5378-ze.zephyrcloud.app[39m
 
-Entrypoint [1mmain[39m[22m [1m[33m[big][39m[22m 419 KiB = [1m[32mmain.css[39m[22m 241 KiB [1m[32mmain.53fd403bf14248e3.js[39m[22m 177 KiB
-chunk (runtime: main) [1m[32m191.9175c7171692c370.js[39m[22m 42 bytes (consume-shared) 6.44 KiB (javascript) [1m[32m[rendered][39m[22m
+Entrypoint [1mmain[39m[22m 419 KiB = [1m[32mmain.css[39m[22m 241 KiB [1m[32mmain.1747a898a07fe3df.js[39m[22m 177 KiB
+chunk (runtime: main) [1m[32m191.17a837d890b012aa.js[39m[22m 42 bytes (consume-shared) 6.67 KiB (javascript) [1m[32m[rendered][39m[22m
 chunk (runtime: main) 6 bytes (remote) 6 bytes (share-init)
 chunk (runtime: main) 6 bytes (remote) 6 bytes (share-init)
 chunk (runtime: main) [1m[32m697.13c9f2c38c2cc320.js[39m[22m (id hint: vendors) 536 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: defaultVendors)[39m[22m
-chunk (runtime: main) [1m[32mmain.53fd403bf14248e3.js[39m[22m, [1m[32mmain.css[39m[22m (main) 84 bytes (consume-shared) 229 KiB (css/mini-extract) 542 KiB (javascript) 11.6 KiB (runtime) 126 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: main) [1m[32mmain.1747a898a07fe3df.js[39m[22m, [1m[32mmain.css[39m[22m (main) 84 bytes (consume-shared) 229 KiB (css/mini-extract) 542 KiB (javascript) 11.6 KiB (runtime) 126 bytes (share-init) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
 
 [1m[33mWARNING[39m[22m in [1m[39m[22m
   [33m⚠[0m Module Warning (from /home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/node_modules/.pnpm/sass-loader@16.0.7_@rspack+core@1.7.7_@swc+helpers@0.5.19__sass-embedded@1.97.3_sass@1._2e165a0cce760c6e415d951cba3a5d0e/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[6].oneOf[4].use[3]):
@@ -401,4 +401,16 @@ chunk (runtime: main) [1m[32mmain.53fd403bf14248e3.js[39m[22m, [1m[32mmain
   [2m│[0m Run in verbose mode to see all warnings.
 [0m
 
-Rspack compiled with [1m[33m21 warnings[39m[22m (fb11a6bf33d69a2a)
+[1m[31mERROR[39m[22m in [1m./src/app/app.tsx[39m[22m
+  [31m×[0m Module not found: Can't resolve [33m'ledger/Module'[39m in [36m'/home/sdiego/Documents/Jobs/Zephyr/zephyr-nx-mf-transfers-app-demo/apps/consumer/src/app'[39m
+    ╭─[12:11]
+ [2m10[0m │ });
+ [2m11[0m │ var FederatedLedgerPage = /*#__PURE__*/ lazy(function() {
+ [2m12[0m │     return import('ledger/Module');
+    · [35;1m           ───────────────────────[0m
+ [2m13[0m │ });
+ [2m14[0m │ // const FederatedReportsPage = lazy(() => import('reports/Module'));
+    ╰────
+[0m
+
+Rspack compiled with [1m[31m1 error[39m[22m and [1m[33m21 warnings[39m[22m (8c265171d87c62a7)

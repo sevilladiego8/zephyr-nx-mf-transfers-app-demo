@@ -43,7 +43,7 @@ npx nx g @nx/workspace:remove micro-app
 # Issues
 
 1. Imports from `shared-ui` don't work. 
-```bash
+```
 'rootDir' is expected to contain all source files.ts(6059)
 ```
 2. Aliases could be added to `scss` files for shorter import paths

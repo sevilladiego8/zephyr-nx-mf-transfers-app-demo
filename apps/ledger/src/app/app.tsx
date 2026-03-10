@@ -12,8 +12,8 @@ import classes from './app.module.scss';
 export function App() {
   return (
     <div className={classes['generic-page']}>
-      <h1>Transfers App</h1>
-      <p>This is the Transfers App application loaded via Module Federation</p>
+      <h1>Ledger App</h1>
+      <p>This is the Ledger App application loaded via Module Federation</p>
 
       <div className="container mt-3">
         <p>A small paragraph here.</p>

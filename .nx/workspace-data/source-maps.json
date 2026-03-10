@@ -574,6 +574,10 @@
       "apps/consumer/project.json",
       "nx/core/project-json"
     ],
+    "implicitDependencies.ledger": [
+      "apps/consumer/project.json",
+      "nx/core/project-json"
+    ],
     "targets.build": [
       "apps/consumer/project.json",
       "nx/core/project-json"
@@ -748,6 +752,396 @@
     ],
     "targets.serve-static.configurations.production.buildTarget": [
       "apps/consumer/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "apps/ledger": {
+    "root": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/ledger/tsconfig.app.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.dependsOn": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.options": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.cache": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.inputs": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.outputs": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.syncGenerators": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.executor": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.options.cwd": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.options.command": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.technologies": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.technologies.0": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.description": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.help": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.help.command": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.help.example": [
+      "apps/ledger/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.preview": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.options": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.syncGenerators": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.executor": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.options.env": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/ledger/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "name": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/ledger/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "apps/ledger/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/ledger/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/ledger/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/ledger/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageVersion": [
+      "apps/ledger/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/ledger/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "apps/ledger/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "apps/ledger/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "apps/ledger/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "apps/ledger/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.target": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.rspackConfig": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.scripts": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.mode": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.mode": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.optimization": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.sourceMap": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.rspackConfig": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.port": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.executor": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.defaultConfiguration": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.watch": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.port": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.development": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.development.buildTarget": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.production": [
+      "apps/ledger/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.production.buildTarget": [
+      "apps/ledger/project.json",
       "nx/core/project-json"
     ],
     "targets.build.inputs": [
