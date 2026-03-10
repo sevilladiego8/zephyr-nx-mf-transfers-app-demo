@@ -244,6 +244,14 @@
       "apps/balances/project.json",
       "nx/core/project-json"
     ],
+    "targets.build.options.styles": [
+      "apps/balances/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.scripts": [
+      "apps/balances/project.json",
+      "nx/core/project-json"
+    ],
     "targets.build.configurations.development": [
       "apps/balances/project.json",
       "nx/core/project-json"

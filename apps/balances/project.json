@@ -15,7 +15,9 @@
         "main": "apps/balances/src/main.ts",
         "tsConfig": "apps/balances/tsconfig.app.json",
         "rspackConfig": "apps/balances/rspack.config.ts",
-        "assets": ["apps/balances/src/favicon.ico", "apps/balances/src/assets"]
+        "assets": ["apps/balances/src/favicon.ico", "apps/balances/src/assets"],
+        "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css"],
+        "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
       },
       "configurations": {
         "development": {

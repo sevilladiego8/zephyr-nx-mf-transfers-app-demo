@@ -16,12 +16,8 @@
         "tsConfig": "apps/reportss/tsconfig.app.json",
         "rspackConfig": "apps/reportss/rspack.config.ts",
         "assets": ["apps/reportss/src/favicon.ico", "apps/reportss/src/assets"],
-        "styles": [
-          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"
-        ],
-        "scripts": [
-          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-        ]
+        "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css"],
+        "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
       },
       "configurations": {
         "development": {

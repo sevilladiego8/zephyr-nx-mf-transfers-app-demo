@@ -355,7 +355,7 @@
                 "apps/transfers/src/assets"
               ],
               "styles": [
-                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"
+                "node_modules/bootstrap/dist/css/bootstrap.min.css"
               ],
               "scripts": [
                 "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -575,6 +575,12 @@
               "assets": [
                 "apps/balances/src/favicon.ico",
                 "apps/balances/src/assets"
+              ],
+              "styles": [
+                "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              ],
+              "scripts": [
+                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
               ]
             },
             "configurations": {
@@ -790,7 +796,7 @@
                 "apps/consumer/src/assets"
               ],
               "styles": [
-                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"
+                "node_modules/bootstrap/dist/css/bootstrap.min.css"
               ],
               "scripts": [
                 "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -1009,7 +1015,7 @@
                 "apps/reportss/src/assets"
               ],
               "styles": [
-                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"
+                "node_modules/bootstrap/dist/css/bootstrap.min.css"
               ],
               "scripts": [
                 "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -1228,7 +1234,7 @@
                 "apps/settings/src/assets"
               ],
               "styles": [
-                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"
+                "node_modules/bootstrap/dist/css/bootstrap.min.css"
               ],
               "scripts": [
                 "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -1456,7 +1462,7 @@
                 "apps/ledger/src/assets"
               ],
               "styles": [
-                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"
+                "node_modules/bootstrap/dist/css/bootstrap.min.css"
               ],
               "scripts": [
                 "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -38090,5 +38096,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1773124040815
+  "computedAt": 1773125327788
 }
