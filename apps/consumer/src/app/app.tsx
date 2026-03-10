@@ -7,7 +7,7 @@ const FederatedTransfersPage = lazy(() => import('transfers/Module'));
 const FederatedBalancesPage = lazy(() => import('balances/Module'));
 const FederatedLedgerPage = lazy(() => import('ledger/Module'));
 const FederatedReportsPage = lazy(() => import('reportss/Module'));
-// const FederatedSettingsPage = lazy(() => import('settings/Module'));
+const FederatedSettingsPage = lazy(() => import('settings/Module'));
 
 
 const App = () => {
@@ -29,7 +29,7 @@ const App = () => {
             <Route path="/balances" element={<FederatedBalancesPage />} />
             <Route path="/reports" element={<FederatedReportsPage />} />
             <Route path="/ledger" element={<FederatedLedgerPage />} />
-            <Route path="/settings" element={<FederatedLedgerPage />} />
+            <Route path="/settings" element={<FederatedSettingsPage />} />
           </Routes>
         </Suspense>
       </main>

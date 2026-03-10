@@ -927,7 +927,8 @@
           "transfers",
           "balances",
           "ledger",
-          "reportss"
+          "reportss",
+          "settings"
         ]
       }
     },
@@ -1149,6 +1150,225 @@
         ],
         "$schema": "../../node_modules/nx/schemas/project-schema.json",
         "sourceRoot": "apps/reportss/src",
+        "projectType": "application",
+        "implicitDependencies": []
+      }
+    },
+    "settings": {
+      "name": "settings",
+      "type": "app",
+      "data": {
+        "root": "apps/settings",
+        "targets": {
+          "typecheck": {
+            "dependsOn": [
+              "^typecheck"
+            ],
+            "options": {
+              "cwd": "apps/settings",
+              "command": "tsc --build --emitDeclarationOnly"
+            },
+            "cache": true,
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "outputs": [
+              "{projectRoot}/**/*.js",
+              "{projectRoot}/**/*.cjs",
+              "{projectRoot}/**/*.mjs",
+              "{projectRoot}/**/*.jsx",
+              "{projectRoot}/**/*.js.map",
+              "{projectRoot}/**/*.jsx.map",
+              "{projectRoot}/**/*.d.ts",
+              "{projectRoot}/**/*.d.cts",
+              "{projectRoot}/**/*.d.mts",
+              "{projectRoot}/**/*.d.ts.map",
+              "{projectRoot}/**/*.d.cts.map",
+              "{projectRoot}/**/*.d.mts.map",
+              "{projectRoot}/tsconfig.tsbuildinfo",
+              "{workspaceRoot}/dist/out-tsc/**/*.d.ts",
+              "{workspaceRoot}/dist/out-tsc/tsconfig.tsbuildinfo"
+            ],
+            "syncGenerators": [
+              "@nx/js:typescript-sync"
+            ],
+            "metadata": {
+              "technologies": [
+                "typescript"
+              ],
+              "description": "Runs type-checking for the project.",
+              "help": {
+                "command": "pnpm exec tsc --build --help",
+                "example": {
+                  "args": [
+                    "--force"
+                  ]
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "build": {
+            "executor": "@nx/rspack:rspack",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "defaultConfiguration": "production",
+            "options": {
+              "target": "web",
+              "outputPath": "dist/apps/settings",
+              "main": "apps/settings/src/main.ts",
+              "tsConfig": "apps/settings/tsconfig.app.json",
+              "rspackConfig": "apps/settings/rspack.config.ts",
+              "assets": [
+                "apps/settings/src/favicon.ico",
+                "apps/settings/src/assets"
+              ],
+              "styles": [
+                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"
+              ],
+              "scripts": [
+                "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+              ]
+            },
+            "configurations": {
+              "development": {
+                "mode": "development"
+              },
+              "production": {
+                "mode": "production",
+                "optimization": true,
+                "sourceMap": false,
+                "rspackConfig": "apps/settings/rspack.config.prod.ts"
+              }
+            },
+            "parallelism": true,
+            "inputs": [
+              "production",
+              "^production",
+              {
+                "env": "NX_MF_DEV_REMOTES"
+              }
+            ],
+            "dependsOn": [
+              "^build"
+            ],
+            "cache": true
+          },
+          "serve": {
+            "executor": "@nx/rspack:module-federation-dev-server",
+            "options": {
+              "buildTarget": "settings:build:development",
+              "port": 4205
+            },
+            "configurations": {
+              "development": {},
+              "production": {
+                "buildTarget": "settings:build:production"
+              }
+            },
+            "parallelism": true,
+            "continuous": true
+          },
+          "preview": {
+            "continuous": true,
+            "options": {
+              "cwd": "apps/settings",
+              "args": [
+                "--node-env=production"
+              ],
+              "env": {
+                "TS_NODE_COMPILER_OPTIONS": "{\"module\":\"CommonJS\",\"moduleResolution\":\"Node10\",\"customConditions\":null}"
+              },
+              "command": "rspack serve"
+            },
+            "syncGenerators": [
+              "@nx/js:typescript-sync"
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "serve-static": {
+            "dependsOn": [
+              "build"
+            ],
+            "continuous": true,
+            "executor": "@nx/web:file-server",
+            "syncGenerators": [
+              "@nx/js:typescript-sync"
+            ],
+            "defaultConfiguration": "production",
+            "options": {
+              "buildTarget": "settings:build",
+              "spa": true,
+              "watch": false,
+              "port": 4205
+            },
+            "configurations": {
+              "development": {
+                "buildTarget": "settings:build:development"
+              },
+              "production": {
+                "buildTarget": "settings:build:production"
+              }
+            },
+            "parallelism": true
+          },
+          "build-deps": {
+            "dependsOn": [
+              "^build"
+            ],
+            "configurations": {},
+            "options": {},
+            "parallelism": true,
+            "executor": "nx:noop"
+          },
+          "watch-deps": {
+            "continuous": true,
+            "dependsOn": [
+              "build-deps"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "command": "pnpm exec nx watch --projects settings --includeDependentProjects -- pnpm exec nx build-deps settings"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "lint": {
+            "executor": "@nx/eslint:lint",
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          },
+          "nx-release-publish": {
+            "executor": "@nx/js:release-publish",
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "options": {},
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "metadata": {
+          "targetGroups": {},
+          "js": {
+            "packageName": "settings",
+            "packageVersion": "0.0.1",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "name": "settings",
+        "tags": [
+          "npm:public"
+        ],
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "apps/settings/src",
         "projectType": "application",
         "implicitDependencies": []
       }
@@ -16573,6 +16793,11 @@
       },
       {
         "source": "consumer",
+        "target": "settings",
+        "type": "implicit"
+      },
+      {
+        "source": "consumer",
         "target": "npm:@nx/eslint-plugin",
         "type": "static"
       },
@@ -16625,6 +16850,33 @@
       },
       {
         "source": "reportss",
+        "target": "npm:react-dom",
+        "type": "static"
+      }
+    ],
+    "settings": [
+      {
+        "source": "settings",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      },
+      {
+        "source": "settings",
+        "target": "npm:@nx/rspack",
+        "type": "static"
+      },
+      {
+        "source": "settings",
+        "target": "npm:zephyr-rspack-plugin",
+        "type": "static"
+      },
+      {
+        "source": "settings",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "settings",
         "target": "npm:react-dom",
         "type": "static"
       }
@@ -37838,5 +38090,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1773121341488
+  "computedAt": 1773121873145
 }

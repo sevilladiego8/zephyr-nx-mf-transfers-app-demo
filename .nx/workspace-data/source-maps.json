@@ -582,6 +582,10 @@
       "apps/consumer/project.json",
       "nx/core/project-json"
     ],
+    "implicitDependencies.settings": [
+      "apps/consumer/project.json",
+      "nx/core/project-json"
+    ],
     "targets.build": [
       "apps/consumer/project.json",
       "nx/core/project-json"
@@ -1536,6 +1540,396 @@
     ],
     "targets.serve-static.configurations.production.buildTarget": [
       "apps/reportss/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
+  "apps/settings": {
+    "root": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "apps/settings/tsconfig.app.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.dependsOn": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.options": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.cache": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.inputs": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.outputs": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.syncGenerators": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.executor": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.options.cwd": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.options.command": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.technologies": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.technologies.0": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.description": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.help": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.help.command": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.typecheck.metadata.help.example": [
+      "apps/settings/tsconfig.json",
+      "@nx/js/typescript"
+    ],
+    "targets.preview": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.options": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.syncGenerators": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.executor": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.options.env": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.watch-deps": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "apps/settings/rspack.config.ts",
+      "@nx/rspack/plugin"
+    ],
+    "name": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "tags": [
+      "apps/settings/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "apps/settings/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "apps/settings/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "apps/settings/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "apps/settings/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageVersion": [
+      "apps/settings/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "apps/settings/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "apps/settings/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "apps/settings/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "apps/settings/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "apps/settings/package.json",
+      "nx/core/package-json"
+    ],
+    "$schema": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "sourceRoot": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.executor": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.defaultConfiguration": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.target": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.main": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.tsConfig": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.rspackConfig": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.assets": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.styles": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.scripts": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.development.mode": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.mode": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.optimization": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.sourceMap": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.configurations.production.rspackConfig": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.executor": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.buildTarget": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.port": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.development": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.configurations.production.buildTarget": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.lint.executor": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.executor": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.defaultConfiguration": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.buildTarget": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.watch": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.options.port": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.development": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.development.buildTarget": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.production": [
+      "apps/settings/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve-static.configurations.production.buildTarget": [
+      "apps/settings/project.json",
       "nx/core/project-json"
     ],
     "targets.build.inputs": [

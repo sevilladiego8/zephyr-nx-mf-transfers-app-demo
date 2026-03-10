@@ -93,7 +93,7 @@
       },
       {
         "file": "package.json",
-        "hash": "1614792198045590654"
+        "hash": "5527358582736727138"
       },
       {
         "file": "pnpm-lock.yaml",
@@ -109,10 +109,91 @@
       },
       {
         "file": "tsconfig.json",
-        "hash": "602475032600652880"
+        "hash": "14586020543662210857"
       }
     ],
     "projectFileMap": {
+      "reportss": [
+        {
+          "file": "apps/reportss/eslint.config.mjs",
+          "hash": "1274917109318296463"
+        },
+        {
+          "file": "apps/reportss/module-federation.config.ts",
+          "hash": "13192542926493767840",
+          "deps": [
+            "npm:@nx/rspack"
+          ]
+        },
+        {
+          "file": "apps/reportss/package.json",
+          "hash": "5169903875473828106"
+        },
+        {
+          "file": "apps/reportss/project.json",
+          "hash": "7659013763246294394"
+        },
+        {
+          "file": "apps/reportss/rspack.config.prod.ts",
+          "hash": "15649239130062661449"
+        },
+        {
+          "file": "apps/reportss/rspack.config.ts",
+          "hash": "15418415032892444816",
+          "deps": [
+            "npm:@nx/rspack",
+            "npm:zephyr-rspack-plugin"
+          ]
+        },
+        {
+          "file": "apps/reportss/src/app/app.module.scss",
+          "hash": "14638935652037678672"
+        },
+        {
+          "file": "apps/reportss/src/app/app.tsx",
+          "hash": "74825965762051754"
+        },
+        {
+          "file": "apps/reportss/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/reportss/src/bootstrap.tsx",
+          "hash": "914691850823771960",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/reportss/src/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/reportss/src/index.html",
+          "hash": "1894443118273500027"
+        },
+        {
+          "file": "apps/reportss/src/main.ts",
+          "hash": "10018980967429810802"
+        },
+        {
+          "file": "apps/reportss/src/remote-entry.ts",
+          "hash": "16889477869301519830"
+        },
+        {
+          "file": "apps/reportss/src/styles.scss",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/reportss/tsconfig.app.json",
+          "hash": "2516710814416403915"
+        },
+        {
+          "file": "apps/reportss/tsconfig.json",
+          "hash": "13738934238651242848"
+        }
+      ],
       "consumer": [
         {
           "file": "apps/consumer/eslint.config.mjs",
@@ -123,11 +204,11 @@
         },
         {
           "file": "apps/consumer/module-federation.config.ts",
-          "hash": "8735368158376104720"
+          "hash": "6162180144434146407"
         },
         {
           "file": "apps/consumer/package.json",
-          "hash": "7573311373792054632"
+          "hash": "14966388324218842508"
         },
         {
           "file": "apps/consumer/postcss.config.js",
@@ -135,7 +216,7 @@
         },
         {
           "file": "apps/consumer/project.json",
-          "hash": "556457144664151208"
+          "hash": "12489483302535700921"
         },
         {
           "file": "apps/consumer/rspack.config.prod.ts",
@@ -151,7 +232,7 @@
         },
         {
           "file": "apps/consumer/src/app/app.tsx",
-          "hash": "11123521829647236826",
+          "hash": "15562535011047597777",
           "deps": [
             "npm:react",
             "npm:react-router-dom"
@@ -191,7 +272,7 @@
         },
         {
           "file": "apps/consumer/src/remotes.d.ts",
-          "hash": "10895165473767027198"
+          "hash": "5993107688139730769"
         },
         {
           "file": "apps/consumer/src/scss/styles.scss",
@@ -405,32 +486,35 @@
           "hash": "14304683872268778188"
         }
       ],
-      "reportss": [
+      "settings": [
         {
-          "file": "apps/reportss/eslint.config.mjs",
-          "hash": "1274917109318296463"
+          "file": "apps/settings/eslint.config.mjs",
+          "hash": "8789163670399984295",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
         },
         {
-          "file": "apps/reportss/module-federation.config.ts",
-          "hash": "10510450460944028509",
+          "file": "apps/settings/module-federation.config.ts",
+          "hash": "13557376717044375810",
           "deps": [
             "npm:@nx/rspack"
           ]
         },
         {
-          "file": "apps/reportss/package.json",
-          "hash": "5169903875473828106"
+          "file": "apps/settings/package.json",
+          "hash": "4082543148282381734"
         },
         {
-          "file": "apps/reportss/project.json",
-          "hash": "7659013763246294394"
+          "file": "apps/settings/project.json",
+          "hash": "9433081618626297305"
         },
         {
-          "file": "apps/reportss/rspack.config.prod.ts",
+          "file": "apps/settings/rspack.config.prod.ts",
           "hash": "15649239130062661449"
         },
         {
-          "file": "apps/reportss/rspack.config.ts",
+          "file": "apps/settings/rspack.config.ts",
           "hash": "15418415032892444816",
           "deps": [
             "npm:@nx/rspack",
@@ -438,19 +522,19 @@
           ]
         },
         {
-          "file": "apps/reportss/src/app/app.module.scss",
+          "file": "apps/settings/src/app/app.module.scss",
           "hash": "14638935652037678672"
         },
         {
-          "file": "apps/reportss/src/app/app.tsx",
-          "hash": "74825965762051754"
+          "file": "apps/settings/src/app/app.tsx",
+          "hash": "14109665307423652585"
         },
         {
-          "file": "apps/reportss/src/assets/.gitkeep",
+          "file": "apps/settings/src/assets/.gitkeep",
           "hash": "3244421341483603138"
         },
         {
-          "file": "apps/reportss/src/bootstrap.tsx",
+          "file": "apps/settings/src/bootstrap.tsx",
           "hash": "914691850823771960",
           "deps": [
             "npm:react",
@@ -458,110 +542,97 @@
           ]
         },
         {
-          "file": "apps/reportss/src/favicon.ico",
+          "file": "apps/settings/src/favicon.ico",
           "hash": "9303420814833116677"
         },
         {
-          "file": "apps/reportss/src/index.html",
-          "hash": "1894443118273500027"
+          "file": "apps/settings/src/index.html",
+          "hash": "9677712409369862459"
         },
         {
-          "file": "apps/reportss/src/main.ts",
+          "file": "apps/settings/src/main.ts",
           "hash": "10018980967429810802"
         },
         {
-          "file": "apps/reportss/src/remote-entry.ts",
+          "file": "apps/settings/src/remote-entry.ts",
           "hash": "16889477869301519830"
         },
         {
-          "file": "apps/reportss/src/styles.scss",
+          "file": "apps/settings/src/styles.scss",
           "hash": "5195668842064076916"
         },
         {
-          "file": "apps/reportss/tsconfig.app.json",
+          "file": "apps/settings/tsconfig.app.json",
           "hash": "2516710814416403915"
         },
         {
-          "file": "apps/reportss/tsconfig.json",
+          "file": "apps/settings/tsconfig.json",
           "hash": "13738934238651242848"
         }
       ],
-      "balances": [
+      "shared-styles": [
         {
-          "file": "apps/balances/eslint.config.mjs",
-          "hash": "1274917109318296463"
+          "file": "libs/shared-styles/.babelrc",
+          "hash": "2946678488919325452"
         },
         {
-          "file": "apps/balances/module-federation.config.ts",
-          "hash": "14385445188641693294"
+          "file": "libs/shared-styles/README.md",
+          "hash": "5646347963837664899"
         },
         {
-          "file": "apps/balances/package.json",
-          "hash": "8569681830825815078"
-        },
-        {
-          "file": "apps/balances/project.json",
-          "hash": "2412068950799658835"
-        },
-        {
-          "file": "apps/balances/rspack.config.prod.ts",
-          "hash": "15649239130062661449"
-        },
-        {
-          "file": "apps/balances/rspack.config.ts",
-          "hash": "15418415032892444816",
+          "file": "libs/shared-styles/eslint.config.mjs",
+          "hash": "15662645796767624439",
           "deps": [
-            "npm:@nx/rspack",
-            "npm:zephyr-rspack-plugin"
+            "npm:@nx/eslint-plugin"
           ]
         },
         {
-          "file": "apps/balances/src/app/app.module.scss",
-          "hash": "14638935652037678672"
+          "file": "libs/shared-styles/package.json",
+          "hash": "10084856883840595"
         },
         {
-          "file": "apps/balances/src/app/app.tsx",
-          "hash": "13990323908395055491"
+          "file": "libs/shared-styles/src/index.scss",
+          "hash": "16195641475352834840"
         },
         {
-          "file": "apps/balances/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
+          "file": "libs/shared-styles/src/index.ts",
+          "hash": "1031118350550732473"
         },
         {
-          "file": "apps/balances/src/bootstrap.tsx",
-          "hash": "1827405544493565599",
-          "deps": [
-            "npm:react",
-            "npm:react-dom"
-          ]
+          "file": "libs/shared-styles/src/lib/_global.scss",
+          "hash": "10324633001685481252"
         },
         {
-          "file": "apps/balances/src/favicon.ico",
-          "hash": "9303420814833116677"
+          "file": "libs/shared-styles/src/lib/_shared-styles.scss",
+          "hash": "10614071096282262323"
         },
         {
-          "file": "apps/balances/src/index.html",
-          "hash": "5928070923302519518"
+          "file": "libs/shared-styles/src/lib/components/_button.scss",
+          "hash": "4252697061329269331"
         },
         {
-          "file": "apps/balances/src/main.ts",
-          "hash": "10018980967429810802"
+          "file": "libs/shared-styles/src/lib/pages/_generic-page.scss",
+          "hash": "1485900838116043269"
         },
         {
-          "file": "apps/balances/src/remote-entry.ts",
-          "hash": "16889477869301519830"
+          "file": "libs/shared-styles/src/lib/shared-styles.tsx",
+          "hash": "8300273798418066829"
         },
         {
-          "file": "apps/balances/src/styles.css",
-          "hash": "17493560206674229133"
+          "file": "libs/shared-styles/src/lib/variables/_colors.scss",
+          "hash": "10439721965439566229"
         },
         {
-          "file": "apps/balances/tsconfig.app.json",
-          "hash": "13694591013100164458"
+          "file": "libs/shared-styles/src/lib/variables/_spacing.scss",
+          "hash": "16385687375820304697"
         },
         {
-          "file": "apps/balances/tsconfig.json",
-          "hash": "13738934238651242848"
+          "file": "libs/shared-styles/tsconfig.json",
+          "hash": "5124546285266257147"
+        },
+        {
+          "file": "libs/shared-styles/tsconfig.lib.json",
+          "hash": "14304683872268778188"
         }
       ],
       "transfers": [
@@ -645,69 +716,82 @@
           "hash": "13738934238651242848"
         }
       ],
-      "shared-styles": [
+      "balances": [
         {
-          "file": "libs/shared-styles/.babelrc",
-          "hash": "2946678488919325452"
+          "file": "apps/balances/eslint.config.mjs",
+          "hash": "1274917109318296463"
         },
         {
-          "file": "libs/shared-styles/README.md",
-          "hash": "5646347963837664899"
+          "file": "apps/balances/module-federation.config.ts",
+          "hash": "14385445188641693294"
         },
         {
-          "file": "libs/shared-styles/eslint.config.mjs",
-          "hash": "15662645796767624439",
+          "file": "apps/balances/package.json",
+          "hash": "8569681830825815078"
+        },
+        {
+          "file": "apps/balances/project.json",
+          "hash": "2412068950799658835"
+        },
+        {
+          "file": "apps/balances/rspack.config.prod.ts",
+          "hash": "15649239130062661449"
+        },
+        {
+          "file": "apps/balances/rspack.config.ts",
+          "hash": "15418415032892444816",
           "deps": [
-            "npm:@nx/eslint-plugin"
+            "npm:@nx/rspack",
+            "npm:zephyr-rspack-plugin"
           ]
         },
         {
-          "file": "libs/shared-styles/package.json",
-          "hash": "10084856883840595"
+          "file": "apps/balances/src/app/app.module.scss",
+          "hash": "14638935652037678672"
         },
         {
-          "file": "libs/shared-styles/src/index.scss",
-          "hash": "16195641475352834840"
+          "file": "apps/balances/src/app/app.tsx",
+          "hash": "13990323908395055491"
         },
         {
-          "file": "libs/shared-styles/src/index.ts",
-          "hash": "1031118350550732473"
+          "file": "apps/balances/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
         },
         {
-          "file": "libs/shared-styles/src/lib/_global.scss",
-          "hash": "10324633001685481252"
+          "file": "apps/balances/src/bootstrap.tsx",
+          "hash": "1827405544493565599",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
         },
         {
-          "file": "libs/shared-styles/src/lib/_shared-styles.scss",
-          "hash": "10614071096282262323"
+          "file": "apps/balances/src/favicon.ico",
+          "hash": "9303420814833116677"
         },
         {
-          "file": "libs/shared-styles/src/lib/components/_button.scss",
-          "hash": "4252697061329269331"
+          "file": "apps/balances/src/index.html",
+          "hash": "5928070923302519518"
         },
         {
-          "file": "libs/shared-styles/src/lib/pages/_generic-page.scss",
-          "hash": "1485900838116043269"
+          "file": "apps/balances/src/main.ts",
+          "hash": "10018980967429810802"
         },
         {
-          "file": "libs/shared-styles/src/lib/shared-styles.tsx",
-          "hash": "8300273798418066829"
+          "file": "apps/balances/src/remote-entry.ts",
+          "hash": "16889477869301519830"
         },
         {
-          "file": "libs/shared-styles/src/lib/variables/_colors.scss",
-          "hash": "10439721965439566229"
+          "file": "apps/balances/src/styles.css",
+          "hash": "17493560206674229133"
         },
         {
-          "file": "libs/shared-styles/src/lib/variables/_spacing.scss",
-          "hash": "16385687375820304697"
+          "file": "apps/balances/tsconfig.app.json",
+          "hash": "13694591013100164458"
         },
         {
-          "file": "libs/shared-styles/tsconfig.json",
-          "hash": "5124546285266257147"
-        },
-        {
-          "file": "libs/shared-styles/tsconfig.lib.json",
-          "hash": "14304683872268778188"
+          "file": "apps/balances/tsconfig.json",
+          "hash": "13738934238651242848"
         }
       ]
     }

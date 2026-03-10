@@ -12,14 +12,5 @@
     {
       "path": "./libs/shared-ui"
     },
-    {
-      "path": "./apps/ledger"
-    },
-    {
-      "path": "./apps/transfers"
-    },
-    {
-      "path": "./apps/reportss"
-    }
   ]
 }

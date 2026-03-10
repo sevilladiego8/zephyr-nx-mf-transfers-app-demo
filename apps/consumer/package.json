@@ -6,6 +6,7 @@
     "transfers": "zephyr:transfers@*",
     "balances": "zephyr:balances@*",
     "ledger": "zephyr:ledger@*",
-    "reportss": "zephyr:reportss@*"
+    "reportss": "zephyr:reportss@*",
+    "settings": "zephyr:settings@*"
   }
 }

@@ -1,10 +1,9 @@
 {
-  "name": "consumer",
+  "name": "settings",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/consumer/src",
+  "sourceRoot": "apps/settings/src",
   "projectType": "application",
   "tags": [],
-  "implicitDependencies": ["transfers", "balances","ledger","reportss","settings"],
   "targets": {
     "build": {
       "executor": "@nx/rspack:rspack",
@@ -12,13 +11,17 @@
       "defaultConfiguration": "production",
       "options": {
         "target": "web",
-        "outputPath": "dist/apps/consumer",
-        "main": "apps/consumer/src/main.ts",
-        "tsConfig": "apps/consumer/tsconfig.app.json",
-        "rspackConfig": "apps/consumer/rspack.config.ts",
-        "assets": ["apps/consumer/src/favicon.ico", "apps/consumer/src/assets"],
-        "styles": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"],
-        "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
+        "outputPath": "dist/apps/settings",
+        "main": "apps/settings/src/main.ts",
+        "tsConfig": "apps/settings/tsconfig.app.json",
+        "rspackConfig": "apps/settings/rspack.config.ts",
+        "assets": ["apps/settings/src/favicon.ico", "apps/settings/src/assets"],
+        "styles": [
+          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.css"
+        ],
+        "scripts": [
+          "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+        ]
       },
       "configurations": {
         "development": {
@@ -28,20 +31,20 @@
           "mode": "production",
           "optimization": true,
           "sourceMap": false,
-          "rspackConfig": "apps/consumer/rspack.config.prod.ts"
+          "rspackConfig": "apps/settings/rspack.config.prod.ts"
         }
       }
     },
     "serve": {
       "executor": "@nx/rspack:module-federation-dev-server",
       "options": {
-        "buildTarget": "consumer:build:development",
-        "port": 4200
+        "buildTarget": "settings:build:development",
+        "port": 4205
       },
       "configurations": {
         "development": {},
         "production": {
-          "buildTarget": "consumer:build:production"
+          "buildTarget": "settings:build:production"
         }
       }
     },
@@ -52,16 +55,16 @@
       "executor": "@nx/web:file-server",
       "defaultConfiguration": "production",
       "options": {
-        "buildTarget": "consumer:build",
+        "buildTarget": "settings:build",
         "watch": false,
-        "port": 4200
+        "port": 4205
       },
       "configurations": {
         "development": {
-          "buildTarget": "consumer:build:development"
+          "buildTarget": "settings:build:development"
         },
         "production": {
-          "buildTarget": "consumer:build:production"
+          "buildTarget": "settings:build:production"
         }
       }
     }
