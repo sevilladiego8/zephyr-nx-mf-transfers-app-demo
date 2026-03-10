@@ -9,7 +9,7 @@ Federated Transfers Demo App with Zaphyr, NX, Rspack and React
 
 # Description
 
-This repo features the usage of Zephyr, NxPack, NX and React in a project using module-federation for micro-frontends.
+This repo features the usage of Zephyr, Rspack, NX and React in a project using module-federation for micro-frontends.
 
 The example is basically a demo transfers app with different pages which can be independently deployed to zephyr cloud relying only on Zephyr’s default Cloud integration.
 
@@ -22,7 +22,7 @@ The example is basically a demo transfers app with different pages which can be 
 - Bootstrap 💄 - 5.3.8
 
 
-# Useful Commands
+# Useful NX Commands
 
 ```bash
 # create new shared library
@@ -42,7 +42,7 @@ npx nx g @nx/workspace:remove micro-app
 
 # Issues
 
-1. Imports from `shared-ui` don't work. 
+1. Imports from `shared-ui` don't work, dispite following nx & module-federation docs. I might need to dive deeper on the project configuration itself.
 ```
 'rootDir' is expected to contain all source files.ts(6059)
 ```
