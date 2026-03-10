@@ -28,18 +28,16 @@ The example is basically a demo transfers app with different pages which can be 
 # create new shared library
 npx nx g @nx/react:library libs/shared-ui --style=scss --bundler=none --js=false
 
-npx nx g @nx/react:library libs/shared-styles --style=scss --bundler=none --js=false
-
 # create new app
 npx nx g @nx/react:app apps/ui-playground --bundler=rspack --style=scss --js=false
 
+# create new host
+npx nx g @nx/react:host apps/host-app --bundler=rspack --style=scss --js=false
 # create new remote
-npx nx g @nx/react:remote apps/micro-app --bundler=rspack --style=scss --js=false
+npx nx g @nx/react:remote apps/remote-app --bundler=rspack --style=scss --js=false
 
 #remove apps
 npx nx g @nx/workspace:remove micro-app
-
-npx nx g @nx/react:host apps/consumer @nx/react:remote apps/transfers @nx/react:remote apps/reports --bundler=rspack --style=scss --js=false
 ```
 
 # Issues
